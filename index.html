@@ -133,105 +133,73 @@
     </div>
   </aside>
 
-  <!-- Main Hero Section (Linkfinity Inspired Dual Focus) -->
-  <section class="hero-wrapper" id="homeHero">
-    <div class="hero-grid-bg"></div>
-    <div class="hero-glow-orb"></div>
-    
-    <div class="container" style="position: relative; z-index: 2;">
-      <div class="hero-content">
-        <div class="section-tag">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-          </svg>
-          LUCKNOW, INDIA &nbsp;·&nbsp; ELEVATORS &amp; PROFESSIONAL AV
+  <!-- Scroll-led introduction adapted to Cappey's elevator and AV work. -->
+  <section class="story-track" id="homeHero" aria-labelledby="storyHeadline">
+    <div class="story-stage">
+      <div class="story-wordmark" aria-hidden="true">MOVE<br>CONNECT</div>
+      <div class="story-visual" aria-hidden="true">
+        <figure class="story-photo story-photo-elevator"><img src="assets/images/elevator-hero.jpg" alt=""></figure>
+        <figure class="story-photo story-photo-av"><img src="assets/images/audiovisual-hero.jpg" alt=""></figure>
+        <span class="story-photo-caption">ELEVATORS &nbsp;·&nbsp; PROFESSIONAL AV</span>
+      </div>
+      <div class="story-copy">
+        <p class="story-eyebrow"><span></span> CAPPEY INDIA &nbsp; / &nbsp; LUCKNOW</p>
+        <h1 id="storyHeadline">Move people.<br><em>Connect spaces.</em></h1>
+        <p class="story-description">From planning through installation and support, we help project teams bring movement and media systems into the spaces they serve.</p>
+        <div class="story-actions">
+          <a class="btn btn-copper" href="elevators.html">Explore elevators <span aria-hidden="true">↗</span></a>
+          <a class="story-text-link" href="audio-visual.html">Explore audio visual <span aria-hidden="true">↗</span></a>
         </div>
-        <h1 class="hero-headline">
-          Elevator and AV systems<br>
-          <span class="gradient-text">for projects across India.</span>
-        </h1>
-        <p class="hero-desc">
-          Cappey India works with project teams across the country on elevator systems and professional audio-visual installations, from early planning through installation and support.
-        </p>
+      </div>
+      <div class="story-ground" aria-hidden="true"></div>
+      <div class="story-scroll-cue">
+        <span>SCROLL TO EXPLORE</span>
+        <svg class="story-scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m14 15-5 5-5-5"></path>
+          <path d="M9 10v10"></path>
+          <path d="M20 4v7a3 3 0 0 1-3 3h-7"></path>
+        </svg>
       </div>
 
-      <!-- Dual Core Offerings Discovery Cards -->
-      <div class="hero-dual-grid">
-        
-        <!-- Division 1: Elevators -->
-        <article class="dual-card" id="cardElevatorsDivision">
+      <div class="story-services" id="storyServices" aria-label="Cappey services">
+        <div class="story-services-intro">
+          <p class="story-eyebrow">TWO DISCIPLINES, ONE PROJECT PARTNER</p>
+          <h2>Movement above.<br><em>Experience around.</em></h2>
+          <p>Elevator systems and professional audio-visual installations, planned for the spaces people use every day.</p>
+        </div>
+        <article class="dual-card story-service-card" id="cardElevatorsDivision">
           <div class="dual-card-media">
-            <img src="assets/images/elevator-hero.jpg" alt="Luxury Architectural Panoramic Glass Elevator" loading="lazy">
+            <img src="assets/images/elevator-hero.jpg" alt="Panoramic elevator in a contemporary building" loading="lazy">
             <div class="dual-card-overlay"></div>
-            <div class="dual-card-tag">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><path d="M12 2v20"></path></svg>
-              ENGINEERED MOBILITY
-            </div>
+            <div class="dual-card-tag">ENGINEERED MOBILITY</div>
           </div>
           <div class="dual-card-body">
-            <div>
-              <h2 class="dual-card-title">Elevator Solutions</h2>
-              <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55;">
-                Precision-engineered vertical transit in partnership with JAS Connect™ and ADCO Controls. From bespoke residential pneumatic and glass capsules to high-speed commercial MRL passenger systems.
-              </p>
-              <div class="dual-card-specs">
-                <span class="spec-badge">Panoramic Glass</span>
-                <span class="spec-badge">PMSM Gearless</span>
-                <span class="spec-badge">Home & Stilt Lifts</span>
-                <span class="spec-badge">Automatic Rescue Device (ARD)</span>
-              </div>
-            </div>
-            <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
-              <a href="elevators.html" class="btn btn-copper" style="flex: 1;">
-                <span>Explore Elevators</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </a>
-              <button class="btn btn-outline open-quote-modal" data-service="Elevators" aria-label="Request Elevator Quote">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-              </button>
+            <h3 class="dual-card-title">Elevator solutions</h3>
+            <p>Residential and commercial systems, from home lifts and glass capsules to passenger elevators.</p>
+            <div class="story-card-actions">
+              <a href="elevators.html" class="story-card-link">Explore elevators <span aria-hidden="true">→</span></a>
+              <button class="btn btn-outline open-quote-modal" data-service="Elevators" aria-label="Request an elevator quote">Quote</button>
             </div>
           </div>
         </article>
-
-        <!-- Division 2: Audio Visual -->
-        <article class="dual-card" id="cardAVDivision">
+        <article class="dual-card story-service-card" id="cardAVDivision">
           <div class="dual-card-media">
-            <img src="assets/images/audiovisual-hero.jpg" alt="Commercial Auditorium & Boardroom Audio Visual Display" loading="lazy">
+            <img src="assets/images/audiovisual-hero.jpg" alt="Professional audio visual systems in an auditorium" loading="lazy">
             <div class="dual-card-overlay"></div>
-            <div class="dual-card-tag">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
-              ACOUSTICS & DISPLAYS
-            </div>
+            <div class="dual-card-tag">ACOUSTICS &amp; DISPLAYS</div>
           </div>
           <div class="dual-card-body">
-            <div>
-              <h2 class="dual-card-title">Audio Visual Systems</h2>
-              <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55;">
-                Authorized national value-added partner for 25+ global pro-audio & video brands. Delivering immersive acoustics, 4K/8K micro-LED walls, DSP matrices, and unified boardroom automation.
-              </p>
-              <div class="dual-card-specs">
-                <span class="spec-badge">Fine-Pitch LED Walls</span>
-                <span class="spec-badge">Dante Audio Network</span>
-                <span class="spec-badge">Line Array Sound</span>
-                <span class="spec-badge">Interactive Smart Panels</span>
-              </div>
-            </div>
-            <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
-              <a href="audio-visual.html" class="btn btn-copper" style="flex: 1;">
-                <span>Explore Audio Visual</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </a>
-              <button class="btn btn-outline open-quote-modal" data-service="Audio Visual" aria-label="Request Audio Visual Quote">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-              </button>
+            <h3 class="dual-card-title">Audio visual systems</h3>
+            <p>Audio, displays and room control for boardrooms, auditoriums and shared spaces.</p>
+            <div class="story-card-actions">
+              <a href="audio-visual.html" class="story-card-link">Explore audio visual <span aria-hidden="true">→</span></a>
+              <button class="btn btn-outline open-quote-modal" data-service="Audio Visual" aria-label="Request an audio visual quote">Quote</button>
             </div>
           </div>
         </article>
-
       </div>
     </div>
   </section>
-
   <!-- Quick Stats Ribbon (From PDF Page 2 & 4) -->
   <section class="stats-ribbon" aria-label="Company Statistics">
     <div class="container">
@@ -782,6 +750,7 @@
     </div>
   </div>
 
+  <script src="js/story-hero.js?v=1" defer></script>
   <script src="js/main.js?v=3"></script>
 </body>
 </html>
