@@ -7,6 +7,7 @@
   <meta name="description" content="Get in touch with Cappey India Private Limited for architectural elevator consultations, commercial audio-visual engineering, or field support in Lucknow and across India.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/refinement.css">
 </head>
 <body>
 
@@ -33,6 +34,7 @@
           <a href="elevators.html" class="nav-link">Elevators</a>
           <a href="audio-visual.html" class="nav-link">Audio Visual</a>
           <a href="about.html" class="nav-link">About Us</a>
+          <a href="founders.html" class="nav-link">Founders</a>
           <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
         </nav>
 
@@ -87,6 +89,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line></svg>
           About Company
         </a>
+        <a href="founders.html" class="drawer-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg>Founders</a>
         <a href="contact.html" class="drawer-link active">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path></svg>
           Contact & Support
@@ -111,14 +114,14 @@
       <div class="hero-content" style="margin-bottom: 0;">
         <div class="section-tag">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path></svg>
-          NATIONAL HEADQUARTERS & TECHNICAL DESK
+          CONTACT & PROJECT ENQUIRIES
         </div>
         <h1 class="hero-headline">
-          CONNECT WITH<br>
-          <span class="gradient-text">CAPPEY INDIA.</span>
+          Talk to the<br>
+          <span class="gradient-text">Cappey India team.</span>
         </h1>
         <p class="hero-desc">
-          Have an ongoing commercial project, residential elevator requirement, or complex venue acoustic design? Connect with our senior project managers.
+          Tell us what you’re planning. We can connect you with the team for elevator, audio-visual and service enquiries.
         </p>
       </div>
     </div>
@@ -201,7 +204,7 @@
               DIRECT DISPATCH
             </div>
             <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Send A Direct Message</h2>
-            <p>Our technical team responds with drawings, datasheets, or budgetary estimates within 24 business hours.</p>
+            <p>This form is a preview and does not send submissions. Call +91-8400000054 to reach the team.</p>
           </div>
 
           <form id="contactFullForm">
@@ -250,7 +253,7 @@
 
               <div class="form-group full-width">
                 <button type="submit" class="btn btn-copper">
-                  <span>Send Technical Inquiry</span>
+                  <span>Submit project enquiry</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </button>
               </div>
@@ -298,6 +301,7 @@
           <ul class="footer-links">
             <li><a href="index.html">&rarr; Home Page</a></li>
             <li><a href="about.html">&rarr; About Cappey India</a></li>
+            <li><a href="founders.html">Founders</a></li>
             <li><a href="about.html#missionVision">&rarr; Mission & Vision</a></li>
             <li><a href="contact.html">&rarr; Contact Us</a></li>
           </ul>
@@ -331,18 +335,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=2"></script>
-  <!-- Agentation is a local development aid, not a public site dependency. -->
-  <script type="module">
-    if (['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
-      const React = (await import('https://esm.sh/react@18.3.1')).default;
-      const ReactDOM = (await import('https://esm.sh/react-dom@18.3.1')).default;
-      const { Agentation } = await import('https://esm.sh/agentation?deps=react@18.3.1,react-dom@18.3.1');
-      const el = document.createElement('div');
-      el.id = 'agentation-root';
-      document.body.appendChild(el);
-      ReactDOM.createRoot(el).render(React.createElement(Agentation, { endpoint: 'http://localhost:4747' }));
-    }
-  </script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>
