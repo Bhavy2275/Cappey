@@ -555,3 +555,31 @@ body.contact-page { --detail-hero-image: url("../assets/images/contact_geometric
   .modal-overlay { padding-right: 0; padding-left: 0; }
   .modal-card { padding-bottom: max(1.5rem, env(safe-area-inset-bottom)); }
 }
+
+/* Keep the mobile page canvas tied to the viewport, even when an embedding
+   surface reports a narrower body width than the visible browser window. */
+@media (max-width: 620px) {
+  body > section {
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .story-track,
+  .story-track .story-stage {
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .story-track:not(.story-animated) .story-copy {
+    width: auto;
+    max-width: none;
+    margin-inline: 0;
+    padding-inline: 1.25rem;
+  }
+
+  .story-track:not(.story-animated) .story-services {
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
