@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing and coverage
+coverage/
+
+# Build outputs
+dist/
+build/
+
+# Environment and local configs
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# User requested exclusions
+agentation/
+agentation
+CAPPEY_INDIA.pdf

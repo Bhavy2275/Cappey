@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevator Systems & Vertical Mobility | Cappey India Private Limited</title>
+  <meta name="description" content="Explore advanced elevator engineering by Cappey India. Partnered with JAS Connect™ and ADCO Controls. Delivering passenger, panoramic glass, home pneumatic, MRL, hydraulic, and freight elevators across India.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="cappey-header" id="cappeyHeader">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-symbol">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M15 9a4.5 4.5 0 1 0 0 6"></path>
+              <path d="M9 12h6"></path>
+            </svg>
+          </div>
+          <div class="logo-text-block">
+            <span class="logo-title">CAPPEY <span>INDIA</span></span>
+            <span class="logo-tagline">Audio Visual | Elevators | Solutions</span>
+          </div>
+        </a>
+
+                <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="elevators.html" class="nav-link active" aria-current="page">Elevators</a>
+          <a href="audio-visual.html" class="nav-link">Audio Visual</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <div class="nav-hotline">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div>
+              <span style="font-size: 0.7rem; display: block; color: var(--text-dim);">ELEVATOR DESK</span>
+              <strong>+91-8400000054</strong>
+            </div>
+          </div>
+          <a href="#configurator" class="btn btn-copper btn-sm">
+            <span>Configure Lift</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" aria-hidden="true" inert>
+    <div>
+      <div class="drawer-header">
+        <div class="brand-logo">
+          <div class="logo-symbol">
+            <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M15 9a4.5 4.5 0 1 0 0 6"></path></svg>
+          </div>
+          <div class="logo-text-block">
+            <span class="logo-title" style="font-size: 1.15rem;">CAPPEY <span>INDIA</span></span>
+          </div>
+        </div>
+        <button class="drawer-close" id="drawerClose" aria-label="Close Mobile Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <nav class="drawer-nav">
+        <a href="index.html" class="drawer-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          Home
+        </a>
+        <a href="elevators.html" class="drawer-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><path d="M12 2v20"></path></svg>
+          Elevators Division
+        </a>
+        <a href="audio-visual.html" class="drawer-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+          Audio Visual Division
+        </a>
+        <a href="about.html" class="drawer-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line></svg>
+          About Company
+        </a>
+        <a href="contact.html" class="drawer-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path></svg>
+          Contact & Support
+        </a>
+      </nav>
+    </div>
+
+    <div class="drawer-footer">
+      <a href="contact.html#contactFullForm" class="btn btn-outline" style="width: 100%; margin-bottom: 0.65rem;">Send project details</a>
+      <a href="tel:+918400000054" class="btn btn-copper" style="width: 100%;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        Call +91-8400000054
+      </a>
+    </div>
+  </aside>
+
+  <!-- Elevators Division Hero Banner -->
+  <section class="hero-wrapper" style="min-height: 80vh; padding-bottom: 3rem;">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow-orb"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="hero-content">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><path d="M12 2v20"></path></svg>
+          VERTICAL MOBILITY &bull; POWERED BY JAS CONNECT™ & ADCO
+        </div>
+        <h1 class="hero-headline">
+          ENGINEERED VERTICAL MOBILITY.<br>
+          <span class="gradient-text">SMART. SAFE. SEAMLESS.</span>
+        </h1>
+        <p class="hero-desc">
+          Delivering specialized elevator engineering across India. From high-speed commercial MRL passenger systems and 360° panoramic glass elevators to pit-less residential vacuum lifts.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="#configurator" class="btn btn-copper">
+            <span>Configure Solution</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#liftTypes" class="btn btn-outline">
+            <span>Explore 10 Lift Types</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 Lift Categories Catalog (From PDF Page 21-24) -->
+  <section class="section-pad" id="liftTypes">
+    <div class="container">
+      <div class="section-head text-center">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><path d="M12 2v20"></path></svg>
+          ENGINEERING CATALOG
+        </div>
+        <h2 class="section-title">Types of Lifts We Deliver</h2>
+        <p class="section-subtitle">
+          Engineered to precise architectural criteria, space constraints, and high passenger volume demands.
+        </p>
+      </div>
+
+      <div class="elevators-catalog-grid">
+        
+        <!-- 1. Passenger Lift -->
+        <article class="lift-card">
+          <div class="lift-card-media">
+            <img src="assets/images/pages/page_23.jpg" alt="Passenger Lift System" style="object-position: left center;">
+            <span class="lift-badge">Geared & Gearless</span>
+          </div>
+          <div class="lift-card-content">
+            <h3 class="lift-title">Passenger Lift</h3>
+            <p class="lift-description">Designed for high-traffic commercial buildings, hotels, and apartments. High ride quality and whisper-quiet leveling.</p>
+            <table class="lift-specs-table">
+              <tr><td>Speed:</td><td>0.65 m/s &ndash; 2.5 m/s</td></tr>
+              <tr><td>Capacity:</td><td>4 to 26 Persons (300 &ndash; 2000 kg)</td></tr>
+              <tr><td>Machine:</td><td>Permanent Magnet Gearless PMSM</td></tr>
+              <tr><td>Safety:</td><td>ARD Auto Rescue & 3D Curtain</td></tr>
+            </table>
+            <button class="btn btn-outline btn-sm open-quote-modal" data-service="Passenger Lift">Request Specs</button>
+          </div>
+        </article>
+
+        <!-- 2. Home Lift -->
+        <article class="lift-card">
+          <div class="lift-card-media">
+            <img src="assets/images/pages/page_23.jpg" alt="Luxury Home Lift" style="object-position: center center;">
+            <span class="lift-badge">Pneumatic / Traction</span>
+          </div>
+          <div class="lift-card-content">
+            <h3 class="lift-title">Home Lift</h3>
+            <p class="lift-description">Compact, stylish, and customized for duplexes, bungalows, and private villas. Zero pit or minimal 150mm pit requirement.</p>
+            <table class="lift-specs-table">
+              <tr><td>Power:</td><td>Single-Phase 230V Compatible</td></tr>
+              <tr><td>Pit Needed:</td><td>Zero Pit / Minimal 150 mm</td></tr>
+              <tr><td>Drive:</td><td>Pneumatic Vacuum / Gearless</td></tr>
+              <tr><td>Capacity:</td><td>2 to 4 Persons (200 &ndash; 350 kg)</td></tr>
+            </table>
+            <button class="btn btn-outline btn-sm open-quote-modal" data-service="Home Lift">Request Specs</button>
+          </div>
+        </article>
+
+        <!-- 3. Panoramic Glass Elevator -->
+        <article class="lift-card">
+          <div class="lift-card-media">
+            <img src="assets/images/pages/page_23.jpg" alt="Panoramic Glass Elevator" style="object-position: right center;">
+            <span class="lift-badge">360&deg; Visibility</span>
+          </div>
+          <div class="lift-card-content">
+            <h3 class="lift-title">Panoramic Glass Elevator</h3>
+            <p class="lift-description">Architectural statement capsule with laminated toughened safety glass and brushed bronze/gold PVD stainless frames.</p>
+            <table class="lift-specs-table">
+              <tr><td>Shape:</td><td>Circular, Semi-Circular, Square</td></tr>
+              <tr><td>Glass:</td><td>Laminated Toughened Curved Glass</td></tr>
+              <tr><td>Finish:</td><td>Brushed Bronze / Mirror Gold SS</td></tr>
+              <tr><td>Speed:</td><td>1.0 m/s &ndash; 2.0 m/s</td></tr>
+            </table>
+            <button class="btn btn-outline btn-sm open-quote-modal" data-service="Panoramic Glass Elevator">Request Specs</button>
+          </div>
+        </article>
+
+        <!-- 4. Hydraulic Elevator -->
+        <article class="lift-card">
+          <div class="lift-card-media">
+            <img src="assets/images/pages/page_22.jpg" alt="Hydraulic Elevator System" style="object-position: left center;">
+            <span class="lift-badge">Heavy Duty Hydraulic</span>
+          </div>
+          <div class="lift-card-content">
+            <h3 class="lift-title">Hydraulic Elevator</h3>
+            <p class="lift-description">Direct-acting or indirect hydraulic piston engineering. Super smooth acceleration, ideal for low-rise high-tonnage needs.</p>
+            <table class="lift-specs-table">
+              <tr><td>Capacity:</td><td>Up to 10,000 kg</td></tr>
+              <tr><td>Stops:</td><td>2 to 6 Stops</td></tr>
+              <tr><td>Drive:</td><td>Italian Submerged Hydraulic Power Unit</td></tr>
+              <tr><td>Overhead:</td><td>Compact Headroom Design</td></tr>
+            </table>
+            <button class="btn btn-outline btn-sm open-quote-modal" data-service="Hydraulic Elevator">Request Specs</button>
+          </div>
+        </article>
+
+        <!-- 5. Machine Room-Less (MRL) -->
+        <article class="lift-card">
+          <div class="lift-card-media">
+            <img src="assets/images/pages/page_24.jpg" alt="MRL Machine Room-Less Elevator" style="object-position: left center;">
+            <span class="lift-badge">Space-Saving MRL</span>
+          </div>
+          <div class="lift-card-content">
+            <h3 class="lift-title">MRL Elevator</h3>
+            <p class="lift-description">Entire hoisting machine mounted within the hoistway. Eliminates costly rooftop machine rooms while slashing power usage by 40%.</p>
+            <table class="lift-specs-table">
+              <tr><td>Space Saved:</td><td>No Rooftop Machine Room Needed</td></tr>
+              <tr><td>Energy:</td><td>40% More Efficient Than Geared</td></tr>
+              <tr><td>Drive:</td><td>Compact PMSM Synchronous Motor</td></tr>
+              <tr><td>Speed:</td><td>1.0 m/s &ndash; 2.5 m/s</td></tr>
+            </table>
+            <button class="btn btn-outline btn-sm open-quote-modal" data-service="MRL Elevator">Request Specs</button>
+          </div>
+        </article>
+
+        <!-- 6. Freight & Cargo Elevator -->
+        <article class="lift-card">
+          <div class="lift-card-media">
+            <img src="assets/images/pages/page_24.jpg" alt="Freight Cargo Elevator" style="object-position: center center;">
+            <span class="lift-badge">High-Load Cargo</span>
+          </div>
+          <div class="lift-card-content">
+            <h3 class="lift-title">Freight / Goods Elevator</h3>
+            <p class="lift-description">Heavy industrial cargo transit with checkered steel platform floor, heavy bumper guards, and reinforced bi-parting doors.</p>
+            <table class="lift-specs-table">
+              <tr><td>Capacity:</td><td>1000 kg to 8000 kg (Forklift Rated)</td></tr>
+              <tr><td>Flooring:</td><td>Checkered Steel Plate / Diamond Tread</td></tr>
+              <tr><td>Doors:</td><td>Vertical Bi-Parting or Automatic</td></tr>
+              <tr><td>Drive:</td><td>Traction or Heavy Hydraulic</td></tr>
+            </table>
+            <button class="btn btn-outline btn-sm open-quote-modal" data-service="Freight Elevator">Request Specs</button>
+          </div>
+        </article>
+
+        <!-- 7. Stretcher / Hospital Lift -->
+        <article class="lift-card">
+          <div class="lift-card-media">
+            <img src="assets/images/pages/page_21.jpg" alt="Hospital Bed Stretcher Lift" style="object-position: center top;">
+            <span class="lift-badge">Hospital / Medical</span>
+          </div>
+          <div class="lift-card-content">
+            <h3 class="lift-title">Stretcher Hospital Lift</h3>
+            <p class="lift-description">Engineered specifically for medical stretchers and intensive care beds with millimetric leveling accuracy and anti-microbial interiors.</p>
+            <table class="lift-specs-table">
+              <tr><td>Depth:</td><td>Extra Deep Cabin (2400 mm+)</td></tr>
+              <tr><td>Leveling:</td><td>Millimetric Jerk-Free Alignment</td></tr>
+              <tr><td>Cabin:</td><td>Antibacterial Stainless Steel</td></tr>
+              <tr><td>Features:</td><td>Priority Emergency Code Recall</td></tr>
+            </table>
+            <button class="btn btn-outline btn-sm open-quote-modal" data-service="Stretcher Lift">Request Specs</button>
+          </div>
+        </article>
+
+        <!-- 8. Handicap / Accessibility Lift -->
+        <article class="lift-card">
+          <div class="lift-card-media">
+            <img src="assets/images/pages/page_21.jpg" alt="Accessibility Wheelchair Lift" style="object-position: center bottom;">
+            <span class="lift-badge">Accessibility Mandate</span>
+          </div>
+          <div class="lift-card-content">
+            <h3 class="lift-title">Handicap Platform Lift</h3>
+            <p class="lift-description">Zero-barrier vertical mobility compliant with national accessibility codes. Braille tactile buttons and voice synthesizers.</p>
+            <table class="lift-specs-table">
+              <tr><td>Controls:</td><td>Low-Profile Braille Capacitive Buttons</td></tr>
+              <tr><td>Safety:</td><td>Fold-Down Ramp & Emergency Stop</td></tr>
+              <tr><td>Speed:</td><td>0.15 m/s Controlled Gentle Speed</td></tr>
+              <tr><td>Compliance:</td><td>ADA & Indian Accessibility Norms</td></tr>
+            </table>
+            <button class="btn btn-outline btn-sm open-quote-modal" data-service="Handicap Lift">Request Specs</button>
+          </div>
+        </article>
+
+        <!-- 9. Automobile / Car Lift -->
+        <article class="lift-card">
+          <div class="lift-card-media">
+            <img src="assets/images/pages/page_21.jpg" alt="Automobile Vehicle Elevator" style="object-position: left center;">
+            <span class="lift-badge">Vehicle Transit</span>
+          </div>
+          <div class="lift-card-content">
+            <h3 class="lift-title">Automobile Lift</h3>
+            <p class="lift-description">Heavy vehicle transport for commercial car showrooms, residential stilt parking, and multi-tier podium garages.</p>
+            <table class="lift-specs-table">
+              <tr><td>Capacity:</td><td>3000 kg &ndash; 6000 kg</td></tr>
+              <tr><td>Drive:</td><td>Heavy Hydraulic Dual Cylinders / Traction</td></tr>
+              <tr><td>Guides:</td><td>Dual Operating Panels for Drivers</td></tr>
+              <tr><td>Safety:</td><td>Vehicle Infrared Wheel Positioning Sensors</td></tr>
+            </table>
+            <button class="btn btn-outline btn-sm open-quote-modal" data-service="Automobile Lift">Request Specs</button>
+          </div>
+        </article>
+
+        <!-- 10. Home Stilt Elevator -->
+        <article class="lift-card">
+          <div class="lift-card-media">
+            <img src="assets/images/pages/page_24.jpg" alt="Home Stilt Elevator" style="object-position: right center;">
+            <span class="lift-badge">Raised Property Solution</span>
+          </div>
+          <div class="lift-card-content">
+            <h3 class="lift-title">Home Stilt Elevator</h3>
+            <p class="lift-description">Custom solution for stilt-parking residential plots. Compact self-supporting steel structure requiring zero heavy masonry.</p>
+            <table class="lift-specs-table">
+              <tr><td>Structure:</td><td>Self-Supporting Glass & Steel Shaft</td></tr>
+              <tr><td>Masonry:</td><td>No Heavy Civil Shaft Required</td></tr>
+              <tr><td>Weather:</td><td>IP55 Outdoor Weatherproof Enclosure</td></tr>
+              <tr><td>Application:</td><td>Ground/Stilt to Living Floors</td></tr>
+            </table>
+            <button class="btn btn-outline btn-sm open-quote-modal" data-service="Home Stilt Elevator">Request Specs</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Advanced Hardware: COP-LOP Series & ADCO Inverters (From PDF Page 25-26) -->
+  <section class="section-pad" id="controlsSection" style="background: var(--bg-navy-dark);">
+    <div class="container">
+      <div class="section-head text-center">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+          INTELLIGENT CONTROLLER & FIXTURE ECOSYSTEM
+        </div>
+        <h2 class="section-title">ADCO Controllers, Inverters & COP-LOP Fixtures</h2>
+        <p class="section-subtitle">
+          Manufactured in compliance with EN 81-20/50 and Indian Standards IS 14665. Featuring high-precision microprocessors and capacitive touch fixtures.
+        </p>
+      </div>
+
+      <!-- COP LOP Fixture Series (From PDF Page 25) -->
+      <div style="background: var(--bg-navy-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 3.5rem;">
+        <h3 style="font-size: 1.6rem; margin-bottom: 1rem; color: #ffffff;">Car & Landing Operating Panels (COP & LOP)</h3>
+        <p style="margin-bottom: 2rem;">Bespoke push-button and full-touch capacitive landing panels designed to harmonize with luxury interior architecture.</p>
+        
+        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--copper-border); margin-bottom: 2rem;">
+          <img src="assets/images/pages/page_25.jpg" alt="COP and LOP Operating Panel Series" style="width: 100%; display: block;">
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+          <div class="spec-badge" style="padding: 0.75rem; text-align: center; border-color: var(--copper-border); color: #ffffff;">Semi Touch Series</div>
+          <div class="spec-badge" style="padding: 0.75rem; text-align: center; border-color: var(--copper-border); color: #ffffff;">Royal Series (Bronze / Gold)</div>
+          <div class="spec-badge" style="padding: 0.75rem; text-align: center; border-color: var(--copper-border); color: #ffffff;">Standard Architectural Series</div>
+          <div class="spec-badge" style="padding: 0.75rem; text-align: center; border-color: var(--copper-border); color: #ffffff;">Exclusive Touch Series</div>
+          <div class="spec-badge" style="padding: 0.75rem; text-align: center; border-color: var(--copper-border); color: #ffffff;">Victor Touch Series</div>
+          <div class="spec-badge" style="padding: 0.75rem; text-align: center; border-color: var(--copper-border); color: #ffffff;">Premium+ TFT Series</div>
+        </div>
+      </div>
+
+      <!-- ADCO Controllers & Drives (From PDF Page 26) -->
+      <div style="background: var(--bg-navy-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem;">
+        <h3 style="font-size: 1.6rem; margin-bottom: 1rem; color: #ffffff;">ADCO Microprocessor Controllers & Closed-Loop Drives</h3>
+        <p style="margin-bottom: 2rem;">High-reliability control cards, serial communication protocols, and intelligent vector inverters for smooth jerk-free travel.</p>
+        
+        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--copper-border); margin-bottom: 2rem;">
+          <img src="assets/images/pages/page_26.jpg" alt="ADCO Elevator Controllers and Inverter Drives" style="width: 100%; display: block;">
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem;">
+          <div style="background: var(--bg-navy-input); border: 1px solid var(--border-subtle); padding: 1.25rem; border-radius: var(--radius-xs);">
+            <strong style="color: var(--copper-light); display: block; margin-bottom: 0.25rem;">AD PL-02 & AD RS-01</strong>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Serial COP communication card with direct CAN-bus link.</span>
+          </div>
+          <div style="background: var(--bg-navy-input); border: 1px solid var(--border-subtle); padding: 1.25rem; border-radius: var(--radius-xs);">
+            <strong style="color: var(--copper-light); display: block; margin-bottom: 0.25rem;">AD C-10 & AD 009</strong>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Integrated motherboard system for new installs and modernizations.</span>
+          </div>
+          <div style="background: var(--bg-navy-input); border: 1px solid var(--border-subtle); padding: 1.25rem; border-radius: var(--radius-xs);">
+            <strong style="color: var(--copper-light); display: block; margin-bottom: 0.25rem;">AD450 AC Drive</strong>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">1.5 kW to 55 kW | 3-Phase closed-loop elevator vector drive.</span>
+          </div>
+          <div style="background: var(--bg-navy-input); border: 1px solid var(--border-subtle); padding: 1.25rem; border-radius: var(--radius-xs);">
+            <strong style="color: var(--copper-light); display: block; margin-bottom: 0.25rem;">AD360 Inverter & Door Drives</strong>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">High performance, low noise optical encoder automatic door motor.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Realtime Elevator Configurator -->
+  <section class="section-pad" id="configurator">
+    <div class="container">
+      <div class="configurator-wrapper">
+        <div style="margin-bottom: 2.5rem;">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            INTERACTIVE SPECIFICATION BUILDER
+          </div>
+          <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Configure Your Elevator System</h2>
+          <p>Estimate the ideal speed, mechanical drive, and cabin dimensions based on your building parameters.</p>
+        </div>
+
+        <form id="elevatorConfigForm">
+          <div class="form-grid">
+            
+            <div class="form-group">
+              <label class="form-label">Project / Building Type *</label>
+              <select class="form-control" required id="elevBuildingType">
+                <option value="Residential Villa">Private Residence / Duplex Villa</option>
+                <option value="Commercial Tower">Commercial Office Tower</option>
+                <option value="Hospital">Hospital / Healthcare Facility</option>
+                <option value="Hotel">Hotel / Luxury Resort</option>
+                <option value="Industrial">Industrial Warehouse / Factory</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Elevator Category *</label>
+              <select class="form-control" required id="elevCategorySelect">
+                <option value="Passenger Lift">Passenger Lift (Geared/Gearless)</option>
+                <option value="Home Lift">Home Lift (Pneumatic / Traction)</option>
+                <option value="Panoramic Glass">Panoramic Glass Observation Lift</option>
+                <option value="MRL Elevator">Machine Room-Less (MRL)</option>
+                <option value="Hydraulic Elevator">Hydraulic Elevator</option>
+                <option value="Freight Elevator">Freight / Goods Elevator</option>
+                <option value="Stretcher Lift">Stretcher Hospital Bed Lift</option>
+                <option value="Stilt Elevator">Home Stilt Elevator</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Number of Stops / Landings (2 to 30) *</label>
+              <input type="number" class="form-control" id="elevStops" min="2" max="30" value="4" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Passenger Capacity</label>
+              <select class="form-control" id="elevCapacity">
+                <option value="4 Pax / 300 kg">4 Passengers (300 kg)</option>
+                <option value="6 Pax / 450 kg" selected>6 Passengers (450 kg)</option>
+                <option value="8 Pax / 544 kg">8 Passengers (544 kg)</option>
+                <option value="10 Pax / 680 kg">10 Passengers (680 kg)</option>
+                <option value="13 Pax / 884 kg">13 Passengers (884 kg)</option>
+                <option value="20+ Pax / 1360+ kg">20+ Passengers (Hospital / Heavy)</option>
+              </select>
+            </div>
+
+            <!-- Dynamic Realtime Feedback Box -->
+            <div class="form-group full-width" style="background: rgba(6, 14, 26, 0.7); border: 1px solid var(--copper-border); border-radius: var(--radius-sm); padding: 1.25rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <div>
+                  <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); display: block;">Recommended Hoisting Speed</span>
+                  <strong id="calcSpeed" style="font-size: 1.2rem; color: var(--copper-light);">0.65 m/s</strong>
+                </div>
+                <div>
+                  <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); display: block;">Recommended Drive Architecture</span>
+                  <strong id="calcDrive" style="font-size: 1rem; color: #ffffff;">Pneumatic / Traction VVVF</strong>
+                </div>
+                <div>
+                  <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); display: block;">Standard Compliance</span>
+                  <strong style="font-size: 1rem; color: #ffffff;">IS 14665 & EN 81-20/50</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Contact Person *</label>
+              <input type="text" class="form-control" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" class="form-control" placeholder="+91..." required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Corporate / Personal Email *</label>
+              <input type="email" class="form-control" placeholder="Email address" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Project City / State *</label>
+              <input type="text" class="form-control" placeholder="e.g. Lucknow, Delhi NCR, Varanasi..." required>
+            </div>
+
+            <div class="form-group full-width">
+              <button type="submit" class="btn btn-copper">
+                <span>Submit Elevator Engineering RFP</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Corporate Footer (From PDF Page 29) -->
+  <footer class="cappey-footer">
+    <div class="footer-gradient-line"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1.25rem;">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M15 9a4.5 4.5 0 1 0 0 6"></path></svg>
+            </div>
+            <div class="logo-text-block">
+              <span class="logo-title">CAPPEY <span>INDIA</span></span>
+              <span class="logo-tagline">Audio Visual | Elevators | Solutions</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Authorized vertical transportation partner with JAS Connect™ and ADCO Controls. Committed to high safety ratings, low lifecycle operational costs, and bespoke architectural finishes.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Elevator Models</h3>
+          <ul class="footer-links">
+            <li><a href="#liftTypes">&rarr; Passenger Lifts</a></li>
+            <li><a href="#liftTypes">&rarr; Panoramic Glass Lifts</a></li>
+            <li><a href="#liftTypes">&rarr; Home & Stilt Elevators</a></li>
+            <li><a href="#liftTypes">&rarr; MRL Gearless Systems</a></li>
+            <li><a href="#liftTypes">&rarr; Heavy Freight Lifts</a></li>
+            <li><a href="#controlsSection">&rarr; ADCO Microcontrollers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Company Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">&rarr; Home Page</a></li>
+            <li><a href="audio-visual.html">&rarr; Audio Visual Division</a></li>
+            <li><a href="about.html">&rarr; About Cappey India</a></li>
+            <li><a href="contact.html">&rarr; Contact Engineering Desk</a></li>
+            <li><a href="index.html#certifications">&rarr; ISO 9001:2015 Cert</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">Direct Inquiries</h3>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path></svg>
+            <div>Indira Nagar Sec 9, Lucknow - 226016</div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div>+91-8400000054 / +91-8881100054</div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path></svg>
+            <div>cappeyindiapvtltd@gmail.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Cappey India Private Limited. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="contact.html#contactFullForm">Request Safety Directives</a>
+          <a href="contact.html#contactFullForm">Request IS 14665 Documentation</a>
+          <a href="elevators.html">Back to Top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Quote Modal -->
+  <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle" aria-hidden="true" inert>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close Modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div style="margin-bottom: 1.5rem;">
+        <div class="section-tag" style="margin-bottom: 0.5rem;">FAST TURNKEY QUOTE</div>
+        <h3 id="quoteModalTitle" style="font-size: 1.5rem;">Request Project Consultation</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Receive technical datasheets, CAD footprints, and cost estimates from Cappey engineers.</p>
+      </div>
+
+      <form id="modalQuoteForm">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control" required placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" required placeholder="Enter mobile number">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" required placeholder="Enter corporate email">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Service Scope</label>
+            <select class="form-control" id="modalServiceSelect" required>
+              <option value="Elevators">Elevators & Lifts</option>
+              <option value="Audio Visual">Commercial Audio-Visual</option>
+              <option value="Both">Turnkey Both (Elevators + AV)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-copper" style="margin-top: 0.5rem; width: 100%;">
+            <span>Submit Quotation Request</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=2"></script>
+  <!-- Agentation is a local development aid, not a public site dependency. -->
+  <script type="module">
+    if (['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
+      const React = (await import('https://esm.sh/react@18.3.1')).default;
+      const ReactDOM = (await import('https://esm.sh/react-dom@18.3.1')).default;
+      const { Agentation } = await import('https://esm.sh/agentation?deps=react@18.3.1,react-dom@18.3.1');
+      const el = document.createElement('div');
+      el.id = 'agentation-root';
+      document.body.appendChild(el);
+      ReactDOM.createRoot(el).render(React.createElement(Agentation, { endpoint: 'http://localhost:4747' }));
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "cappey-india-website",
+  "version": "1.0.0",
+  "description": "Official website for Cappey India Private Limited - Elevators & Audio Visual Solutions",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve . --listen 8080 --no-clipboard",
+    "start": "npx serve . --listen 8080"
+  }
+}

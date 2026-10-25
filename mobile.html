@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, " name="viewport"/>
+<title>CAPPEY INDIA | Audio Visual &amp; Vertical Mobility Engineering</title>
+<!-- Google Fonts: Syne & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim as required -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-fixed": "#0d1c32",
+            "outline": "#8f9097",
+            "on-primary": "#233148",
+            "on-surface": "#d9e3f8",
+            "on-secondary-container": "#fb9e75",
+            "on-tertiary-fixed": "#0b1c30",
+            "primary-fixed-dim": "#b9c7e4",
+            "error": "#ffb4ab",
+            "on-surface-variant": "#c5c6cd",
+            "on-secondary-fixed-variant": "#753313",
+            "on-primary-fixed-variant": "#39475f",
+            "on-error-container": "#ffdad6",
+            "inverse-primary": "#515f78",
+            "on-secondary": "#581e00",
+            "surface-container-lowest": "#050e1d",
+            "inverse-on-surface": "#273141",
+            "outline-variant": "#44474d",
+            "tertiary": "#b7c8e1",
+            "surface-container-low": "#121c2b",
+            "on-tertiary-container": "#73839b",
+            "on-background": "#d9e3f8",
+            "background": "#091423",
+            "surface-tint": "#b9c7e4",
+            "surface-bright": "#303a4a",
+            "secondary-fixed-dim": "#ffb596",
+            "surface-container-high": "#212a3a",
+            "secondary": "#ffb596",
+            "primary-container": "#0a192f",
+            "tertiary-fixed": "#d3e4fe",
+            "on-tertiary": "#213145",
+            "tertiary-container": "#081a2d",
+            "primary-fixed": "#d6e3ff",
+            "on-secondary-fixed": "#360f00",
+            "on-error": "#690005",
+            "on-primary-container": "#74829d",
+            "surface-dim": "#091423",
+            "inverse-surface": "#d9e3f8",
+            "secondary-container": "#753313",
+            "surface-container": "#16202f",
+            "error-container": "#93000a",
+            "tertiary-fixed-dim": "#b7c8e1",
+            "surface-container-highest": "#2c3546",
+            "surface-variant": "#2c3546",
+            "primary": "#b9c7e4",
+            "surface": "#091423",
+            "secondary-fixed": "#ffdbcd",
+            "on-tertiary-fixed-variant": "#38485d"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin-lg": "5rem",
+            "space-xl": "2.5rem",
+            "margin": "1.25rem",
+            "margin-md": "2.5rem",
+            "space-2xl": "4rem",
+            "space-sm": "0.5rem",
+            "gutter-lg": "2.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "title-md": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Syne"],
+            "headline-lg": ["Syne"],
+            "headline-xl-mobile": ["Syne"],
+            "headline-md": ["Syne"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Syne"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-xl": ["Syne"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Syne"]
+          },
+          "fontSize": {
+            "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "800" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.015em", "fontWeight": "400" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.15em", "fontWeight": "700" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Architectural Custom Visual Highlights */
+    .copper-gradient-text {
+      background: linear-gradient(135deg, #ffdbcd 0%, #ffb596 50%, #c87d55 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .copper-border-gradient {
+      border-image: linear-gradient(90deg, #d9825b 0%, rgba(217, 130, 91, 0.2) 100%) 1;
+    }
+    .copper-btn-bg {
+      background: linear-gradient(180deg, #d9825b 0%, #b36b44 100%);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    }
+    .blueprint-grid {
+      background-size: 24px 24px;
+      background-image: 
+        linear-gradient(to right, rgba(226, 232, 240, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(226, 232, 240, 0.03) 1px, transparent 1px);
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom, 1.25rem);
+    }
+    /* Hide scrollbars for slick horizontal carousels */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<meta content="web_dashboard" name="shell-type"/><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+    <style>
+    :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+      outline: 3px solid #dd8e66;
+      outline-offset: 3px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary-container selection:text-secondary-fixed overflow-x-hidden blueprint-grid">
+<!-- ================= TOP APP BAR (MANDATED SHARED COMPONENT) ================= -->
+<!-- Executed using style_shell_layout, style_bg_color, style_shadows_and_elevation, typography from JSON -->
+<header class="sticky top-0 z-50 flex items-center justify-between w-full px-margin py-space-sm bg-surface-container-lowest/90 backdrop-blur-md shadow-2xl">
+<!-- Left: Monogram & Identity Anchor -->
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-low border border-secondary/30 flex items-center justify-center text-secondary shadow-[0_0_15px_-3px_rgba(217,130,91,0.3)]">
+<span class="material-symbols-outlined text-headline-sm" data-icon="architecture">architecture</span>
+</div>
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm font-bold tracking-widest text-on-surface leading-none">CAPPEY</span>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest uppercase text-[9px] mt-0.5">AUDIO VISUAL | ELEVATORS</span>
+</div>
+</div>
+<!-- Right: Direct Quick Dial + Drawer Menu Trigger -->
+<div class="flex items-center gap-space-sm">
+<a aria-label="Direct Technical Support Line" class="w-8 h-8 rounded-full border border-secondary/40 flex items-center justify-center text-secondary hover:bg-secondary/10 active:scale-95 transition-all" href="tel:+9105224002277">
+<span class="material-symbols-outlined text-[18px]" data-icon="call">call</span>
+</a>
+<button aria-label="Open Navigation Drawer" class="w-9 h-9 rounded-lg bg-surface-container-high/60 border border-outline-variant/30 flex items-center justify-center text-on-surface active:scale-95 transition-transform" id="menu-toggle-btn" aria-expanded="false" aria-controls="nav-drawer">
+<span class="material-symbols-outlined text-[20px]" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- ================= NAVIGATION DRAWER (MANDATED SHARED COMPONENT) ================= -->
+<!-- Controlled via Drawer Trigger; Mobile Drawer Overlay -->
+<div class="fixed inset-0 bg-surface-container-lowest/80 backdrop-blur-sm z-50 hidden transition-opacity duration-300 opacity-0" id="drawer-backdrop"></div>
+<aside class="fixed inset-y-0 right-0 z-50 flex flex-col w-4/5 max-w-sm p-space-lg bg-surface-container-lowest border-l border-outline-variant/30 shadow-2xl translate-x-full transition-transform duration-300" id="nav-drawer" aria-label="Mobile navigation" aria-hidden="true" inert>
+<div class="flex items-center justify-between pb-space-md border-b border-outline-variant/20 mb-space-md">
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm font-extrabold tracking-widest text-secondary">CAPPEY ARCHITECTURAL</span>
+<span class="text-label-sm font-label-sm text-outline tracking-wider">ENGINEERING CONTRACTOR</span>
+</div>
+<button class="text-on-surface-variant hover:text-secondary p-1" id="drawer-close-btn" aria-label="Close navigation">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<!-- Mandatory Navigation Drawer Destinations from JSON -->
+<!-- Screen represents Mobile Home, so 'Overview' is Active -->
+<nav class="flex flex-col gap-space-xs flex-1">
+<!-- 1. Overview / Home -->
+<a class="flex items-center gap-space-md bg-secondary-container/20 text-secondary border-l-2 border-secondary px-space-md py-space-sm rounded" href="#overview" onclick="closeDrawer()">
+<span class="material-symbols-outlined text-[20px]" data-icon="domain">domain</span>
+<span class="text-label-md font-label-md tracking-wider uppercase">Mobile Home</span>
+</a>
+<!-- 2. Elevators Page -->
+<a class="flex items-center gap-space-md text-on-surface-variant hover:bg-surface-container hover:text-secondary px-space-md py-space-sm rounded transition-all" href="elevators.html">
+<span class="material-symbols-outlined text-[20px]" data-icon="elevator">elevator</span>
+<span class="text-label-md font-label-md tracking-wider uppercase">Elevators Division</span>
+</a>
+<!-- 3. Audio Visual Page -->
+<a class="flex items-center gap-space-md text-on-surface-variant hover:bg-surface-container hover:text-secondary px-space-md py-space-sm rounded transition-all" href="audio-visual.html">
+<span class="material-symbols-outlined text-[20px]" data-icon="sensors">sensors</span>
+<span class="text-label-md font-label-md tracking-wider uppercase">Audio Visual Systems</span>
+</a>
+<!-- 4. About Us -->
+<a class="flex items-center gap-space-md text-on-surface-variant hover:bg-surface-container hover:text-secondary px-space-md py-space-sm rounded transition-all" href="about.html">
+<span class="material-symbols-outlined text-[20px]" data-icon="info">info</span>
+<span class="text-label-md font-label-md tracking-wider uppercase">About Cappey India</span>
+</a>
+<!-- 5. Contact Us -->
+<a class="flex items-center gap-space-md text-on-surface-variant hover:bg-surface-container hover:text-secondary px-space-md py-space-sm rounded transition-all" href="contact.html">
+<span class="material-symbols-outlined text-[20px]" data-icon="contacts">contacts</span>
+<span class="text-label-md font-label-md tracking-wider uppercase">Contact &amp; Offices</span>
+</a>
+<!-- 6. Switch to Desktop View -->
+<a class="flex items-center gap-space-md text-outline hover:bg-surface-container hover:text-secondary px-space-md py-space-sm rounded transition-all border-t border-outline-variant/20 mt-2 pt-3" href="index.html?view=desktop">
+<span class="material-symbols-outlined text-[20px]" data-icon="desktop_windows">desktop_windows</span>
+<span class="text-label-md font-label-md tracking-wider uppercase">Switch to Desktop View</span>
+</a>
+</nav>
+<!-- Drawer Footer Specs & Direct Line -->
+<div class="pt-space-md border-t border-outline-variant/20 flex flex-col gap-space-xs text-body-sm text-outline">
+<div class="flex items-center justify-between text-secondary font-label-sm tracking-wider">
+<span>HQ: LUCKNOW / PAN-INDIA</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+</div>
+<p class="text-[11px] leading-relaxed">Direct Desk: +91 (0522) 400-CAPPEY</p>
+<p class="text-[10px] text-outline-variant uppercase tracking-widest mt-1">Cappey India Private Limited</p>
+</div>
+</aside>
+<!-- ================= MAIN CONTENT CANVAS ================= -->
+<main class="w-full pb-32"><div class="flex flex-col w-full">
+<!-- 1. COMPACT HERO SECTION -->
+<section class="relative px-margin pt-space-md pb-space-lg overflow-hidden" id="overview">
+<div class="flex flex-col gap-space-sm relative z-10">
+<!-- Eyebrow Tag -->
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded-full bg-secondary-container/30 text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-[9px] text-secondary">CAPPEY INDIA | LUXURY SYSTEMS</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile font-extrabold tracking-tight text-on-surface">
+        ELEVATING SPACES.<br/>
+<span class="copper-gradient-text">AMPLIFYING EXPERIENCES.</span>
+</h1>
+<!-- Subhead -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Leading engineering contractor for architectural vertical mobility and enterprise-grade AV integration across India.
+      </p>
+<!-- Quick Action Mobile Pill Buttons -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<a class="copper-btn-bg flex items-center justify-center gap-1.5 py-3 px-3 rounded text-on-primary-fixed font-label-md text-label-md tracking-wider uppercase shadow-lg shadow-secondary/10 active:scale-95 transition-transform text-center min-h-[44px]" href="#rfp-form">
+<span class="material-symbols-outlined text-[16px]">draw</span>
+<span>Consult RFP</span>
+</a>
+<a class="bg-surface-container-high/80 hover:bg-surface-container-highest flex items-center justify-center gap-1.5 py-3 px-3 rounded text-on-surface font-label-md text-label-md tracking-wider uppercase active:scale-95 transition-transform text-center min-h-[44px]" href="#divisions">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Divisions</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 2. DUAL CORE DIVISION CARDS -->
+<section class="px-margin py-space-sm flex flex-col gap-space-md" id="divisions">
+<!-- Division 01: Architectural Elevators -->
+<div class="service-card elevators bg-surface-container-low rounded-xl overflow-hidden shadow-2xl transition-all">
+<div class="relative w-full h-52 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Bespoke luxury panoramic circular glass elevator ascending through a soaring multi-tier modern architectural atrium. Polished bronze and copper structural framing, warm cove illumination, ambient night city views through glass curtain walls, hyper-realistic architectural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSGmzuR71mWyEl0xB6LFwoA4NP0vaceu1QRtDAegE1HXhexdL9fX5gbK5tlq3jOI5HGmzUxKuHSTDAP01ud20Nh-ByMAn4qWsyvfB9JEOfXkpb--EVl3ew1dwbumaoNkASTVk6x29bIDO_hlDCyR9epSc4b8piBGOjt77TLTMumaHYKRRK-sCa6S_tALuoJVzd6n0sKKE_89NCRErl6siFTkKBqJh_zOem27Xgn93F5Kr88Gq_o9Km"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/90 text-secondary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-md">
+            Division 01
+          </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high/80 text-on-surface-variant font-label-sm text-label-sm tracking-wide">
+            0.5 – 2.5 m/s
+          </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Architectural Elevators</h2>
+<span class="material-symbols-outlined text-secondary">elevator</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Panoramic glass, bespoke hydraulic engineering, and silent MRL gearless traction systems tailored for prestige developments.
+        </p>
+<!-- Expandable Details Trigger -->
+<button class="mt-space-xs flex items-center justify-between py-2 text-secondary font-label-md text-label-md uppercase tracking-wider min-h-[44px]" aria-expanded="false" onclick="toggleDetails(this)">
+<span>Technical Parameters &amp; Speeds</span>
+<span class="material-symbols-outlined expand-icon transition-transform">expand_more</span>
+</button>
+<div class="service-details hidden pt-space-xs pb-space-xs flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant" aria-hidden="true">
+<div class="flex justify-between items-center py-1.5 px-2 bg-surface-container rounded">
+<span>Machine Room-Less (MRL)</span>
+<span class="text-on-surface font-semibold">Up to 32 Passengers</span>
+</div>
+<div class="flex justify-between items-center py-1.5 px-2 bg-surface-container rounded">
+<span>Custom Car Geometries</span>
+<span class="text-on-surface font-semibold">Curved • Hexagonal • Cube</span>
+</div>
+<div class="flex justify-between items-center py-1.5 px-2 bg-surface-container rounded">
+<span>Telemetry</span>
+<span class="text-secondary font-semibold">JAS Connect™ 24/7 Cloud</span>
+</div>
+</div>
+<a class="inline-flex items-center gap-1.5 text-secondary font-label-md text-label-md uppercase tracking-wider pt-space-xs group" href="elevators.html">
+<span>Explore Elevators</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Division 02: Professional Audio-Visual -->
+<div class="service-card audiovisual bg-surface-container-low rounded-xl overflow-hidden shadow-2xl transition-all">
+<div class="relative w-full h-52 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High-tech executive amphitheater and council chamber featuring a gigantic seamlessly curved fine-pitch micro-LED screen displaying interactive financial analytics. Tiered warm walnut seating, integrated beamforming ceiling microphones, dark obsidian finishes, warm architectural perimeter lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGbLL9IolMmhwBppTlEiWfbNM__6uTq8c0YU1xgusHE8mDNM1M-Kl2ZILrh8QT6FAGGuWi0xpTOobCRqY3ZLmW-edzV6Fti9b3isdcMCaQ9MOBKmfM3MRhwfVNur2lDESyEMk7NZoJ0iRz7_hgmRAWZybVGw84WedNVe1v4EcsOSIR_DPJLDPUK-I4e2lKhKozcIkNhOiGh9YUyL73JUC_y-kclylE7T6mXLHV7RYPKz3mf_DX3ZeC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/90 text-secondary font-label-sm text-label-sm uppercase tracking-wider backdrop-blur-md">
+            Division 02
+          </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high/80 text-on-surface-variant font-label-sm text-label-sm tracking-wide">
+            Latency &lt; 0.1ms
+          </span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Professional Audio-Visual</h2>
+<span class="material-symbols-outlined text-secondary">sensors</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Fine-pitch curved Micro-LED displays, Dante-native DSP network architecture, and studio-grade acoustic engineering.
+        </p>
+<!-- Expandable Details Trigger -->
+<button class="mt-space-xs flex items-center justify-between py-2 text-secondary font-label-md text-label-md uppercase tracking-wider min-h-[44px]" aria-expanded="false" onclick="toggleDetails(this)">
+<span>Acoustic Rig &amp; Network Specs</span>
+<span class="material-symbols-outlined expand-icon transition-transform">expand_more</span>
+</button>
+<div class="service-details hidden pt-space-xs pb-space-xs flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant" aria-hidden="true">
+<div class="flex justify-between items-center py-1.5 px-2 bg-surface-container rounded">
+<span>Video Canvas Matrix</span>
+<span class="text-on-surface font-semibold">0.9mm Micro-LED 8K HDR</span>
+</div>
+<div class="flex justify-between items-center py-1.5 px-2 bg-surface-container rounded">
+<span>Network Audio</span>
+<span class="text-on-surface font-semibold">Dante / AES67 Multi-Zone</span>
+</div>
+<div class="flex justify-between items-center py-1.5 px-2 bg-surface-container rounded">
+<span>Reverberation Control</span>
+<span class="text-secondary font-semibold">Target RT60 ≤ 0.45s</span>
+</div>
+</div>
+<a class="inline-flex items-center gap-1.5 text-secondary font-label-md text-label-md uppercase tracking-wider pt-space-xs group" href="audio-visual.html">
+<span>Explore AV Systems</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 3. VERIFIED METRICS GRID (2x2 TACTILE GRID) -->
+<section class="px-margin py-space-md">
+<div class="bg-surface-container-lowest/80 rounded-xl p-space-md shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Performance Benchmarks</span>
+<span class="flex h-2 w-2 rounded-full bg-secondary"></span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Metric 1 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-center">
+<span class="font-headline-md text-headline-md font-bold copper-gradient-text leading-tight">10+</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-0.5">Years Track Record</span>
+<span class="font-body-sm text-body-sm text-outline text-[11px] mt-0.5">Proven turnkey engineering</span>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-center">
+<span class="font-headline-md text-headline-md font-bold copper-gradient-text leading-tight">500+</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-0.5">Landmark Installs</span>
+<span class="font-body-sm text-body-sm text-outline text-[11px] mt-0.5">Pan-India enterprise scale</span>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-center">
+<span class="font-headline-md text-headline-md font-bold copper-gradient-text leading-tight">9001</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-0.5">ISO Certified</span>
+<span class="font-body-sm text-body-sm text-outline text-[11px] mt-0.5">Audited safety &amp; QA</span>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-center">
+<span class="font-headline-md text-headline-md font-bold copper-gradient-text leading-tight">24/7</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-0.5">Dedicated SLA</span>
+<span class="font-body-sm text-body-sm text-outline text-[11px] mt-0.5">Rapid dispatch guarantee</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. ENGINEERING PILLARS & CAPABILITY TABS -->
+<section class="px-margin py-space-sm flex flex-col gap-space-sm" id="specifications">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Modular Architecture</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Capability Portfolio</h2>
+</div>
+</div>
+<!-- Filter Toggle Pills -->
+<div class="grid grid-cols-3 gap-1 bg-surface-container-low p-1 rounded-lg">
+<button aria-pressed="true" class="service-tab-btn py-2 text-center rounded font-label-md text-label-md bg-secondary-container text-on-secondary-container font-bold min-h-[44px]" id="tab-all" onclick="filterServices('all')">All</button>
+<button aria-pressed="false" class="service-tab-btn py-2 text-center rounded font-label-md text-label-md text-on-surface-variant min-h-[44px]" id="tab-elevators" onclick="filterServices('elevators')">Mobility</button>
+<button aria-pressed="false" class="service-tab-btn py-2 text-center rounded font-label-md text-label-md text-on-surface-variant min-h-[44px]" id="tab-audiovisual" onclick="filterServices('audiovisual')">Audiovisual</button>
+</div>
+<!-- Capabilities Matrix Items -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<!-- Item 1 -->
+<div class="service-card elevators bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-lowest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">architecture</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Panoramic &amp; Bespoke Lifts</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Custom curved laminated glass, bronze hardware, and architectural chassis integration.</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="service-card elevators bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-lowest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">speed</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-title-md text-title-md text-on-surface">MRL Gearless Commercial</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Energy-regenerative drives, low-vibration guideways, and high-traffic destination dispatching.</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="service-card audiovisual bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-lowest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">tv_gen</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Micro-LED Video Walls</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Seamless curved COB displays with high dynamic range, bezel-free architectural fitting.</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="service-card audiovisual bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-lowest flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-title-md text-title-md text-on-surface">Dante Acoustic Architecture</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero-latency IP audio distribution, beamforming arrays, and RT60 chamber tuning.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. MARKET SEGMENTS WE SERVE (2-COLUMN CARDS WITH ICONS) -->
+<section class="px-margin py-space-md" id="solutions">
+<div class="flex flex-col gap-1 mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Engineered Deployments</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Sectors &amp; Typologies</h2>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Sector 1 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1.5 shadow-md">
+<span class="material-symbols-outlined text-secondary text-[24px]">corporate_fare</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Boardrooms &amp; Chambers</span>
+<span class="font-body-sm text-body-sm text-outline text-[11px]">Secure conferencing &amp; executive suites</span>
+</div>
+<!-- Sector 2 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1.5 shadow-md">
+<span class="material-symbols-outlined text-secondary text-[24px]">theater_comedy</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Auditoriums &amp; Arts</span>
+<span class="font-body-sm text-body-sm text-outline text-[11px]">Large-format theatrical acoustics</span>
+</div>
+<!-- Sector 3 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1.5 shadow-md">
+<span class="material-symbols-outlined text-secondary text-[24px]">hotel</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Luxury Hospitality</span>
+<span class="font-body-sm text-body-sm text-outline text-[11px]">Bespoke 5-star atrium elevators</span>
+</div>
+<!-- Sector 4 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1.5 shadow-md">
+<span class="material-symbols-outlined text-secondary text-[24px]">school</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Universities &amp; Inst.</span>
+<span class="font-body-sm text-body-sm text-outline text-[11px]">Smart lecture theatres &amp; campuses</span>
+</div>
+<!-- Sector 5 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1.5 shadow-md">
+<span class="material-symbols-outlined text-secondary text-[24px]">stadium</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Arenas &amp; Complexes</span>
+<span class="font-body-sm text-body-sm text-outline text-[11px]">High-decibel distributed sound &amp; transit</span>
+</div>
+<!-- Sector 6 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1.5 shadow-md">
+<span class="material-symbols-outlined text-secondary text-[24px]">podcasts</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Broadcast Studios</span>
+<span class="font-body-sm text-body-sm text-outline text-[11px]">Calibrated live transmission setups</span>
+</div>
+</div>
+</section>
+<!-- 6. STRATEGIC GLOBAL BRAND PARTNERS -->
+<section class="px-margin py-space-sm">
+<div class="bg-surface-container-lowest/90 rounded-xl p-space-md shadow-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Ecosystem Partners</span>
+<span class="font-label-sm text-label-sm text-secondary">Tier-1 OEM Alliances</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1.5 rounded bg-surface-container text-on-surface text-[11px] font-semibold">Audio-Technica</span>
+<span class="px-2.5 py-1.5 rounded bg-surface-container text-on-surface text-[11px] font-semibold">Genelec</span>
+<span class="px-2.5 py-1.5 rounded bg-surface-container text-on-surface text-[11px] font-semibold">Turbosound</span>
+<span class="px-2.5 py-1.5 rounded bg-surface-container text-on-surface text-[11px] font-semibold">Tannoy</span>
+<span class="px-2.5 py-1.5 rounded bg-surface-container text-on-surface text-[11px] font-semibold">PureLink</span>
+<span class="px-2.5 py-1.5 rounded bg-surface-container text-on-surface text-[11px] font-semibold">Pequod</span>
+<span class="px-2.5 py-1.5 rounded bg-surface-container text-on-surface text-[11px] font-semibold">MaxTell LED</span>
+<span class="px-2.5 py-1.5 rounded bg-surface-container text-on-surface text-[11px] font-semibold">JAS Connect™</span>
+<span class="px-2.5 py-1.5 rounded bg-surface-container text-on-surface text-[11px] font-semibold">ADCO Controllers</span>
+</div>
+</div>
+</section>
+<!-- 7. STATUTORY CREDENTIALS -->
+<section class="px-margin py-space-sm">
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-xs rounded bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">ISO 9001:2015</span>
+<span class="text-[9px] text-outline">Quality Registered</span>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">DPIIT Recognized</span>
+<span class="text-[9px] text-outline">Startup India Govt</span>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">business_center</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Udyam MSME</span>
+<span class="text-[9px] text-outline">Govt of India</span>
+</div>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">copyright</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Registered Brand</span>
+<span class="text-[9px] text-outline">Intellectual Rights</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. DIRECT MOBILE RFP & ENGINEERING CONSULTATION FORM -->
+<section class="px-margin py-space-md" id="rfp-form">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-2xl flex flex-col gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Turnkey Contract Desk</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Request Technical RFP</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Receive formal engineering schematics, bill of quantities (BOQ), and lead-time estimation.</p>
+</div>
+<form class="flex flex-col gap-space-sm mt-space-xs" onsubmit="event.preventDefault(); document.getElementById('rfp-status').textContent = 'This request is a preview and has not been sent. Call +91 8400000054 to reach our team.';">
+<!-- Division / Typology Selector -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Engineering Division</label>
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded p-3 focus:outline-none min-h-[44px]">
+<option>Integrated AV + Elevator Scope</option>
+<option>Vertical Mobility (Elevator Only)</option>
+<option>Enterprise AV &amp; Acoustic Engineering</option>
+<option>Maintenance SLA / JAS Connect Modernization</option>
+</select>
+</div>
+<!-- Contact Detail -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Official Email / Phone</label>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md rounded p-3 focus:outline-none min-h-[44px]" placeholder="architect@firm.com / +91 Mobile" required="" type="text"/>
+</div>
+<!-- Project Location -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Project Location &amp; City</label>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md rounded p-3 focus:outline-none min-h-[44px]" placeholder="e.g. Bandra Kurla Complex, Mumbai" required="" type="text"/>
+</div>
+<!-- CTA Button -->
+<button class="copper-btn-bg text-on-primary-fixed font-label-md text-label-md uppercase tracking-wider py-3.5 px-4 rounded font-bold shadow-lg shadow-secondary/15 active:scale-98 transition-transform mt-space-xs min-h-[44px] flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Submit Engineering RFP</span>
+</button>
+<p class="font-body-sm text-body-sm text-secondary" id="rfp-status" role="status" aria-live="polite"></p>
+</form>
+</div>
+</section>
+<!-- 9. MOBILE FOOTER & QUICK DIAL SUMMARY -->
+<footer class="px-margin pt-space-md pb-space-lg bg-surface-container-lowest flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[16px]">apartment</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-wider">CAPPEY INDIA</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline leading-relaxed">
+        Corporate Headquarters: Cappey Tower, Gomti Nagar, Lucknow, UP.<br/>
+        Regional Project Hubs: Mumbai • Delhi NCR • Bengaluru • Hyderabad
+      </p>
+</div>
+<!-- Quick Dial Line Button -->
+<a class="flex items-center justify-between p-space-sm rounded bg-surface-container hover:bg-surface-container-high transition-colors min-h-[44px]" href="tel:+9105224002277">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface uppercase">Central Engineering Hotline</span>
+<span class="font-body-sm text-body-sm text-secondary font-semibold">+91 (0522) 400-CAPPEY</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">call</span>
+</a>
+<!-- Legal & Copyright -->
+<div class="flex flex-col gap-1 pt-space-xs">
+<div class="flex items-center justify-between text-[11px] text-outline font-label-sm">
+<span>© 2025 CAPPEY INDIA PVT LTD</span>
+<span>CIN: U29100UP2019PTC118</span>
+</div>
+<p class="text-[10px] text-outline-variant uppercase tracking-widest">
+        Architectural Engineering • Precision Vertical Mobility • Enterprise AV
+      </p>
+</div>
+</footer>
+</div></main>
+<!-- ================= DOCKED BOTTOM NAVIGATION (MANDATED SHARED COMPONENT) ================= -->
+<!-- Executed precisely using labels: ["Home", "Divisions", "Call Now", "Quote"] from JSON -->
+<!-- Semantic Mapping: Home is currently active -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin py-space-xs pb-safe bg-surface-container-lowest/95 backdrop-blur-lg border-t border-outline-variant/20 shadow-[0_-10px_25px_-5px_rgba(2,6,12,0.8)]">
+<!-- 1. Home (Active match) -->
+<a class="flex flex-col items-center justify-center text-secondary font-bold" href="#overview">
+<span class="material-symbols-outlined text-[22px]" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-[10px] mt-0.5">Home</span>
+</a>
+<!-- 2. Divisions -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#divisions">
+<span class="material-symbols-outlined text-[22px]" data-icon="tune">tune</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-[10px] mt-0.5">Divisions</span>
+</a>
+<!-- 3. Call Now -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-200" href="tel:+9105224002277">
+<span class="material-symbols-outlined text-[22px]" data-icon="call">call</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-[10px] mt-0.5">Call Now</span>
+</a>
+<!-- 4. Quote -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#rfp-form">
+<span class="material-symbols-outlined text-[22px]" data-icon="request_quote">request_quote</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-[10px] mt-0.5">Quote</span>
+</a>
+</nav>
+<!-- ================= INLINE SCRIPT FOR MOBILE INTERACTIONS ================= -->
+<script>
+    // Accessible navigation drawer controls
+    const menuBtn = document.getElementById('menu-toggle-btn');
+    const drawerCloseBtn = document.getElementById('drawer-close-btn');
+    const drawer = document.getElementById('nav-drawer');
+    const backdrop = document.getElementById('drawer-backdrop');
+    const drawerLinks = drawer.querySelectorAll('a[href]');
+
+    function setDrawerState(open) {
+      drawer.classList.toggle('translate-x-full', !open);
+      backdrop.classList.toggle('hidden', !open);
+      backdrop.classList.toggle('opacity-0', !open);
+      drawer.setAttribute('aria-hidden', String(!open));
+      drawer.toggleAttribute('inert', !open);
+      menuBtn.setAttribute('aria-expanded', String(open));
+      document.body.style.overflow = open ? 'hidden' : '';
+      if (open) drawerCloseBtn.focus();
+      else menuBtn.focus();
+    }
+
+    function openDrawer() { setDrawerState(true); }
+    function closeDrawer() { setDrawerState(false); }
+
+    menuBtn?.addEventListener('click', openDrawer);
+    drawerCloseBtn?.addEventListener('click', closeDrawer);
+    backdrop?.addEventListener('click', closeDrawer);
+    drawerLinks.forEach(link => link.addEventListener('click', closeDrawer));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !drawer.classList.contains('translate-x-full')) closeDrawer();
+      if (event.key !== 'Tab' || drawer.classList.contains('translate-x-full')) return;
+      const focusable = [...drawer.querySelectorAll('a[href], button:not([disabled])')];
+      if (event.shiftKey && document.activeElement === focusable[0]) {
+        event.preventDefault(); focusable.at(-1).focus();
+      } else if (!event.shiftKey && document.activeElement === focusable.at(-1)) {
+        event.preventDefault(); focusable[0].focus();
+      }
+    });
+
+    // Filter Service Cards
+    function filterServices(category) {
+      const cards = document.querySelectorAll('.service-card');
+      const tabs = document.querySelectorAll('.service-tab-btn');
+      
+      // Update Tab Styles
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'font-bold');
+        tab.classList.add('text-on-surface-variant');
+      });
+
+      const activeTab = document.getElementById('tab-' + category);
+      if (activeTab) {
+        activeTab.classList.remove('text-on-surface-variant');
+        activeTab.classList.add('bg-secondary-container', 'text-on-secondary-container', 'font-bold');
+      }
+      tabs.forEach(tab => tab.setAttribute('aria-pressed', String(tab === activeTab)));
+
+      // Filter Cards
+      cards.forEach(card => {
+        if (category === 'all') {
+          card.style.display = 'block';
+        } else if (card.classList.contains(category)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Expand/Collapse Details Card
+    function toggleDetails(triggerEl) {
+      const parent = triggerEl.closest('.service-card');
+      const details = parent.querySelector('.service-details');
+      const icon = parent.querySelector('.expand-icon');
+
+      if (details.classList.contains('hidden')) {
+        details.classList.remove('hidden');
+        details.setAttribute('aria-hidden', 'false');
+        triggerEl.setAttribute('aria-expanded', 'true');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      } else {
+        details.classList.add('hidden');
+        details.setAttribute('aria-hidden', 'true');
+        triggerEl.setAttribute('aria-expanded', 'false');
+        if (icon) icon.style.transform = 'rotate(0deg)';
+      }
+    }
+  </script>
+</body></html>

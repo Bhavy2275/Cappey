@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cappey India Private Limited | Architectural Elevators & Professional Audio-Visual Solutions</title>
+  <meta name="description" content="Cappey India Private Limited is a premier ISO 9001:2015 certified provider of advanced vertical mobility elevator engineering and commercial audio-visual integration across India.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="cappey-header" id="cappeyHeader">
+    <div class="container">
+      <div class="nav-wrapper">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" id="headerLogo">
+          <div class="logo-symbol">
+            <!-- Custom Geometric Monogram Icon -->
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M15 9a4.5 4.5 0 1 0 0 6"></path>
+              <path d="M9 12h6"></path>
+            </svg>
+          </div>
+          <div class="logo-text-block">
+            <span class="logo-title">CAPPEY <span>INDIA</span></span>
+            <span class="logo-tagline">Audio Visual | Elevators | Solutions</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+                <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+          <a href="elevators.html" class="nav-link">Elevators</a>
+          <a href="audio-visual.html" class="nav-link">Audio Visual</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Nav Right CTA -->
+        <div class="nav-actions">
+          <div class="nav-hotline">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <div>
+              <span style="font-size: 0.7rem; display: block; color: var(--text-dim);">DIRECT DESK</span>
+              <strong>+91-8400000054</strong>
+            </div>
+          </div>
+          <a href="#quoteModal" class="btn btn-copper btn-sm open-quote-modal" id="headerQuoteBtn">
+            <span>Request Quote</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <!-- Mobile Menu Button -->
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" aria-hidden="true" inert>
+    <div>
+      <div class="drawer-header">
+        <div class="brand-logo">
+          <div class="logo-symbol">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M15 9a4.5 4.5 0 1 0 0 6"></path>
+            </svg>
+          </div>
+          <div class="logo-text-block">
+            <span class="logo-title" style="font-size: 1.15rem;">CAPPEY <span>INDIA</span></span>
+          </div>
+        </div>
+        <button class="drawer-close" id="drawerClose" aria-label="Close Mobile Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="drawer-nav">
+        <a href="index.html" class="drawer-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          Home
+        </a>
+        <a href="elevators.html" class="drawer-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><path d="M12 2v20"></path></svg>
+          Elevators Division
+        </a>
+        <a href="audio-visual.html" class="drawer-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+          Audio Visual Division
+        </a>
+        <a href="about.html" class="drawer-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          About Company
+        </a>
+        <a href="contact.html" class="drawer-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Contact & Support
+        </a>
+        <a href="mobile.html" class="drawer-link" style="color: var(--copper); font-weight: 600; border-top: 1px solid var(--border-color); margin-top: 0.5rem; padding-top: 0.75rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          Stitch Mobile Experience
+        </a>
+      </nav>
+    </div>
+
+    <div class="drawer-footer">
+      <p style="font-size: 0.8rem; margin-bottom: 0.75rem; color: var(--text-dim);">Need immediate consultation?</p>
+      <a href="contact.html#contactFullForm" class="btn btn-outline" style="width: 100%; margin-bottom: 0.65rem;">Send project details</a>
+      <a href="tel:+918400000054" class="btn btn-copper" style="width: 100%;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        Call +91-8400000054
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Hero Section (Linkfinity Inspired Dual Focus) -->
+  <section class="hero-wrapper" id="homeHero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow-orb"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="hero-content">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          CAPPEY INDIA PRIVATE LIMITED &bull; ISO 9001:2015 CERTIFIED
+        </div>
+        <h1 class="hero-headline">
+          ELEVATING SPACES.<br>
+          <span class="gradient-text">AMPLIFYING EXPERIENCES.</span>
+        </h1>
+        <p class="hero-desc">
+          Cappey India is a leading national engineering and integration partner providing architectural elevator systems and world-class commercial audio-visual solutions for modern enterprises, luxury residences, and institutions.
+        </p>
+      </div>
+
+      <!-- Dual Core Offerings Discovery Cards -->
+      <div class="hero-dual-grid">
+        
+        <!-- Division 1: Elevators -->
+        <article class="dual-card" id="cardElevatorsDivision">
+          <div class="dual-card-media">
+            <img src="assets/images/elevator-hero.jpg" alt="Luxury Architectural Panoramic Glass Elevator" loading="lazy">
+            <div class="dual-card-overlay"></div>
+            <div class="dual-card-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><path d="M12 2v20"></path></svg>
+              ENGINEERED MOBILITY
+            </div>
+          </div>
+          <div class="dual-card-body">
+            <div>
+              <h2 class="dual-card-title">Elevator Solutions</h2>
+              <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55;">
+                Precision-engineered vertical transit in partnership with JAS Connect™ and ADCO Controls. From bespoke residential pneumatic and glass capsules to high-speed commercial MRL passenger systems.
+              </p>
+              <div class="dual-card-specs">
+                <span class="spec-badge">Panoramic Glass</span>
+                <span class="spec-badge">PMSM Gearless</span>
+                <span class="spec-badge">Home & Stilt Lifts</span>
+                <span class="spec-badge">Automatic Rescue Device (ARD)</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
+              <a href="elevators.html" class="btn btn-copper" style="flex: 1;">
+                <span>Explore Elevators</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <button class="btn btn-outline open-quote-modal" data-service="Elevators" aria-label="Request Elevator Quote">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Division 2: Audio Visual -->
+        <article class="dual-card" id="cardAVDivision">
+          <div class="dual-card-media">
+            <img src="assets/images/audiovisual-hero.jpg" alt="Commercial Auditorium & Boardroom Audio Visual Display" loading="lazy">
+            <div class="dual-card-overlay"></div>
+            <div class="dual-card-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+              ACOUSTICS & DISPLAYS
+            </div>
+          </div>
+          <div class="dual-card-body">
+            <div>
+              <h2 class="dual-card-title">Audio Visual Systems</h2>
+              <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55;">
+                Authorized national value-added partner for 25+ global pro-audio & video brands. Delivering immersive acoustics, 4K/8K micro-LED walls, DSP matrices, and unified boardroom automation.
+              </p>
+              <div class="dual-card-specs">
+                <span class="spec-badge">Fine-Pitch LED Walls</span>
+                <span class="spec-badge">Dante Audio Network</span>
+                <span class="spec-badge">Line Array Sound</span>
+                <span class="spec-badge">Interactive Smart Panels</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
+              <a href="audio-visual.html" class="btn btn-copper" style="flex: 1;">
+                <span>Explore Audio Visual</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <button class="btn btn-outline open-quote-modal" data-service="Audio Visual" aria-label="Request Audio Visual Quote">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats Ribbon (From PDF Page 2 & 4) -->
+  <section class="stats-ribbon" aria-label="Company Statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">10<span>+</span></div>
+          <div class="stat-label">Years of Industry Leadership</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500<span>+</span></div>
+          <div class="stat-label">Landmark Turnkey Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">28<span>+</span></div>
+          <div class="stat-label">Global Authorized Brand Partners</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100<span>%</span></div>
+          <div class="stat-label">ISO 9001:2015 Quality Tested</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate Heritage & Philosophy (From PDF Page 2) -->
+  <section class="section-pad" id="aboutBrief" style="background: var(--bg-navy-dark);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        
+        <div>
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            ABOUT CAPPEY INDIA
+          </div>
+          <h2 class="section-title">Delivering innovative solutions that enhance the human experience.</h2>
+          <p style="margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.7;">
+            Cappey India Private Limited is a specialized technology and mobility enterprise. We bridge international manufacturing precision with India's expanding corporate, institutional, and luxury residential sectors.
+          </p>
+          <p style="margin-bottom: 2rem; font-size: 0.95rem; line-height: 1.7;">
+            Whether designing smooth, whisper-quiet vertical transportation or architecting multi-channel acoustic and video networks for thousands of attendees, we ensure engineering reliability, uncompromising safety, and refined aesthetics.
+          </p>
+          
+          <!-- Core Pillars Grid -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+            <div style="display: flex; gap: 0.85rem; align-items: flex-start;">
+              <div style="width: 38px; height: 38px; border-radius: var(--radius-xs); background: rgba(200, 125, 85, 0.15); border: 1px solid var(--copper-border); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--copper-light)" stroke-width="2" style="width: 18px; height: 18px;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              </div>
+              <div>
+                <strong style="color: #ffffff; font-size: 0.95rem; display: block;">Innovative Solutions</strong>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Cutting-edge IoT, smart telematics & DSP</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 0.85rem; align-items: flex-start;">
+              <div style="width: 38px; height: 38px; border-radius: var(--radius-xs); background: rgba(200, 125, 85, 0.15); border: 1px solid var(--copper-border); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--copper-light)" stroke-width="2" style="width: 18px; height: 18px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div>
+                <strong style="color: #ffffff; font-size: 0.95rem; display: block;">Premium Quality</strong>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Rigorous European & BIS benchmark standards</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 0.85rem; align-items: flex-start;">
+              <div style="width: 38px; height: 38px; border-radius: var(--radius-xs); background: rgba(200, 125, 85, 0.15); border: 1px solid var(--copper-border); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--copper-light)" stroke-width="2" style="width: 18px; height: 18px;"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+              </div>
+              <div>
+                <strong style="color: #ffffff; font-size: 0.95rem; display: block;">Expert Support</strong>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">24/7 dedicated engineers across India</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 0.85rem; align-items: flex-start;">
+              <div style="width: 38px; height: 38px; border-radius: var(--radius-xs); background: rgba(200, 125, 85, 0.15); border: 1px solid var(--copper-border); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--copper-light)" stroke-width="2" style="width: 18px; height: 18px;"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+              </div>
+              <div>
+                <strong style="color: #ffffff; font-size: 0.95rem; display: block;">Customer Trust</strong>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Repeat partnerships with leading institutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side Architectural Mission & Vision Showcase -->
+        <div style="position: relative;">
+          <div class="card" style="padding: 2rem; background: linear-gradient(145deg, rgba(14, 26, 45, 0.95), rgba(7, 17, 32, 0.98)); border: 1px solid var(--copper-border); box-shadow: var(--copper-glow); position: relative; overflow: hidden;">
+            <div style="position: absolute; top: -50px; right: -50px; width: 140px; height: 140px; background: radial-gradient(circle, rgba(200, 125, 85, 0.15) 0%, transparent 70%); pointer-events: none;"></div>
+
+            <!-- Header Badge -->
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
+              <div style="display: flex; align-items: center; gap: 0.6rem;">
+                <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--copper); box-shadow: 0 0 8px var(--copper);"></span>
+                <span style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--copper-light); font-weight: 700;">STRATEGIC ROADMAP</span>
+              </div>
+              <span style="font-size: 0.75rem; color: var(--text-dim); background: rgba(255, 255, 255, 0.05); padding: 0.2rem 0.6rem; border-radius: var(--radius-xs); border: 1px solid rgba(255,255,255,0.08);">ISO 9001:2015</span>
+            </div>
+
+            <!-- Mission Box -->
+            <div style="margin-bottom: 1.5rem; background: rgba(10, 25, 47, 0.6); border: 1px solid rgba(200, 125, 85, 0.25); border-left: 3px solid var(--copper); border-radius: var(--radius-sm); padding: 1.25rem;">
+              <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--copper)" stroke-width="2" style="width: 18px; height: 18px;"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                <h4 style="font-size: 1rem; color: #ffffff; margin: 0; font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.05em;">Our Mission</h4>
+              </div>
+              <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin: 0;">
+                To deliver innovative audio-visual and elevator solutions that enhance functionality, safety, and user experience across modern commercial, institutional, and luxury residential infrastructures.
+              </p>
+            </div>
+
+            <!-- Vision Box -->
+            <div style="margin-bottom: 1.5rem; background: rgba(10, 25, 47, 0.6); border: 1px solid rgba(185, 199, 228, 0.2); border-left: 3px solid var(--accent-blue); border-radius: var(--radius-sm); padding: 1.25rem;">
+              <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="2" style="width: 18px; height: 18px;"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <h4 style="font-size: 1rem; color: #ffffff; margin: 0; font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.05em;">Our Vision</h4>
+              </div>
+              <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin: 0;">
+                To become India's foremost trusted leader in integrated vertical mobility and acoustics engineering by setting new industry standards in precision quality, IoT innovation, and customer satisfaction.
+              </p>
+            </div>
+
+            <!-- Integrated Core Divisions Pills -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem;">
+              <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); border-radius: var(--radius-xs); padding: 0.75rem 0.5rem; text-align: center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--copper)" stroke-width="2" style="width: 20px; height: 20px; margin: 0 auto 0.4rem;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+                <span style="font-size: 0.75rem; color: #ffffff; font-weight: 600; display: block;">Audio Systems</span>
+                <span style="font-size: 0.65rem; color: var(--text-dim);">Dante & DSP</span>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); border-radius: var(--radius-xs); padding: 0.75rem 0.5rem; text-align: center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="2" style="width: 20px; height: 20px; margin: 0 auto 0.4rem;"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                <span style="font-size: 0.75rem; color: #ffffff; font-weight: 600; display: block;">Visual Solutions</span>
+                <span style="font-size: 0.65rem; color: var(--text-dim);">Micro-LED & Video</span>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); border-radius: var(--radius-xs); padding: 0.75rem 0.5rem; text-align: center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--copper)" stroke-width="2" style="width: 20px; height: 20px; margin: 0 auto 0.4rem;"><rect x="4" y="2" width="16" height="20" rx="2"></rect><path d="M12 2v20"></path></svg>
+                <span style="font-size: 0.75rem; color: #ffffff; font-weight: 600; display: block;">Elevators</span>
+                <span style="font-size: 0.65rem; color: var(--text-dim);">MRL & Hydraulic</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Market Segments We Serve (From PDF Page 3 & 5-7) -->
+  <section class="section-pad" id="marketSegments">
+    <div class="container">
+      <div class="section-head text-center">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          MARKET SEGMENTS
+        </div>
+        <h2 class="section-title">Engineered For Diverse Commercial Sectors</h2>
+        <p class="section-subtitle">
+          From high-rise commercial structures requiring high-speed passenger elevators to sacred spaces needing acoustic clarity, Cappey delivers specialized turnkey solutions.
+        </p>
+      </div>
+
+      <div class="market-grid">
+        
+        <!-- 01: Elevators -->
+        <div class="market-card">
+          <span class="market-index">01</span>
+          <div class="market-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><path d="M12 2v20"></path></svg>
+          </div>
+          <h3 class="market-name">Elevator Mobility</h3>
+          <p class="market-desc">Passenger, panoramic, MRL, hydraulic, freight and bespoke residential villa elevators.</p>
+        </div>
+
+        <!-- 02: Hotels & Hospitality -->
+        <div class="market-card">
+          <span class="market-index">02</span>
+          <div class="market-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path></svg>
+          </div>
+          <h3 class="market-name">Hotels & Hospitality</h3>
+          <p class="market-desc">High-elegance guest lifts, distributed banquet acoustics, and ambient architectural lighting.</p>
+        </div>
+
+        <!-- 03: Auditoriums -->
+        <div class="market-card">
+          <span class="market-index">03</span>
+          <div class="market-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2"></rect></svg>
+          </div>
+          <h3 class="market-name">Auditoriums</h3>
+          <p class="market-desc">Line array concert speaker arrays, 4K laser projection, and motorized acoustic treatments.</p>
+        </div>
+
+        <!-- 04: Recording Studios -->
+        <div class="market-card">
+          <span class="market-index">04</span>
+          <div class="market-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+          </div>
+          <h3 class="market-name">Studios & Broadcast</h3>
+          <p class="market-desc">Genelec active monitors, analog mixing consoles, and pristine Dante network cabling.</p>
+        </div>
+
+        <!-- 05: Theaters -->
+        <div class="market-card">
+          <span class="market-index">05</span>
+          <div class="market-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <h3 class="market-name">Theaters & Cinemas</h3>
+          <p class="market-desc">Dolby Atmos calibrated surround speaker networks and tensioned projection screens.</p>
+        </div>
+
+        <!-- 06: Clubs & Nightclubs -->
+        <div class="market-card">
+          <span class="market-index">06</span>
+          <div class="market-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h3 class="market-name">Clubs & Nightlife</h3>
+          <p class="market-desc">High-output subwoofers, Pequod sculptural audio, and Pioneer DJ hardware installations.</p>
+        </div>
+
+        <!-- 07: Gyms & Fitness -->
+        <div class="market-card">
+          <span class="market-index">07</span>
+          <div class="market-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6 5v14M18 5v14M2 9v6M22 9v6M6 12h12"></path></svg>
+          </div>
+          <h3 class="market-name">Gyms & Fitness</h3>
+          <p class="market-desc">Moisture-resistant ceiling audio, high-energy background sound, and video wall zoning.</p>
+        </div>
+
+        <!-- 08: Schools & Institutions -->
+        <div class="market-card">
+          <span class="market-index">08</span>
+          <div class="market-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+          </div>
+          <h3 class="market-name">Schools & Colleges</h3>
+          <p class="market-desc">Interactive digital flat panels, smart lecterns, classroom speech enhancement, and PA.</p>
+        </div>
+
+        <!-- 09: Houses of Worship -->
+        <div class="market-card">
+          <span class="market-index">09</span>
+          <div class="market-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+          </div>
+          <h3 class="market-name">Houses of Worship</h3>
+          <p class="market-desc">Acoustic echo reduction, steerable column speakers, and crystal-clear vocal amplification.</p>
+        </div>
+
+        <!-- 10: Conference Rooms -->
+        <div class="market-card">
+          <span class="market-index">10</span>
+          <div class="market-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3 class="market-name">Conference & Boardrooms</h3>
+          <p class="market-desc">PTZ auto-tracking video conferencing, beamforming ceiling mics, and automated touch controls.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Authorized Brand Partners (From PDF Page 27) -->
+  <section class="section-pad brands-section" id="partnerBrands">
+    <div class="container">
+      <div class="section-head text-center">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+          AUTHORIZED GLOBAL ALLIANCES
+        </div>
+        <h2 class="section-title">Authorized Partners of Global Industry Leaders</h2>
+        <p class="section-subtitle">
+          We bring authentic manufacturer warranties, certified system design, and direct factory technical support to all projects across India.
+        </p>
+      </div>
+
+      <div class="brand-pills-wrap">
+        <div class="brand-badge"><svg class="brand-badge-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path></svg><div><div class="brand-badge-name">Audio-Technica</div><div class="brand-badge-cat">Microphones & Wireless</div></div></div>
+        <div class="brand-badge"><svg class="brand-badge-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 5"></polygon></svg><div><div class="brand-badge-name">Turbosound</div><div class="brand-badge-cat">Line Arrays & Loudspeakers</div></div></div>
+        <div class="brand-badge"><svg class="brand-badge-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"></circle></svg><div><div class="brand-badge-name">Genelec</div><div class="brand-badge-cat">Active Studio Monitors</div></div></div>
+        <div class="brand-badge"><svg class="brand-badge-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 2v20"></path></svg><div><div class="brand-badge-name">Pequod Acoustics</div><div class="brand-badge-cat">Luxury Hi-Fi Speakers</div></div></div>
+        <div class="brand-badge"><svg class="brand-badge-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect></svg><div><div class="brand-badge-name">Pioneer DJ</div><div class="brand-badge-cat">Club Mixers & Players</div></div></div>
+        <div class="brand-badge"><svg class="brand-badge-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path></svg><div><div class="brand-badge-name">Behringer</div><div class="brand-badge-cat">Digital Consoles & Systems</div></div></div>
+        <div class="brand-badge"><svg class="brand-badge-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect></svg><div><div class="brand-badge-name">JAS Connect™</div><div class="brand-badge-cat">Elevating Connections</div></div></div>
+        <div class="brand-badge"><svg class="brand-badge-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg><div><div class="brand-badge-name">ADCO Controls</div><div class="brand-badge-cat">Smart Elevator Inverters</div></div></div>
+        <div class="brand-badge"><svg class="brand-badge-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"></rect></svg><div><div class="brand-badge-name">Maxtell LED</div><div class="brand-badge-cat">360° Podiums & Video Walls</div></div></div>
+        <div class="brand-badge"><svg class="brand-badge-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle></svg><div><div class="brand-badge-name">PureLink</div><div class="brand-badge-cat">AV Over IP & Matrix Systems</div></div></div>
+        <div class="brand-badge"><svg class="brand-badge-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="8"></circle></svg><div><div class="brand-badge-name">Lithe Audio</div><div class="brand-badge-cat">Bluetooth & Wi-Fi Ceiling Audio</div></div></div>
+        <div class="brand-badge"><svg class="brand-badge-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg><div><div class="brand-badge-name">Symetrix DSP</div><div class="brand-badge-cat">Audio Processors & DSP</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Trust Badges (From PDF Page 28) -->
+  <section class="section-pad" id="certifications">
+    <div class="container">
+      <div class="section-head text-center">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          STATUTORY COMPLIANCE & ACCREDITATIONS
+        </div>
+        <h2 class="section-title">Verified Certifications & Accreditations</h2>
+        <p class="section-subtitle">
+          Cappey India Private Limited adheres to the highest statutory government registrations, quality systems, and legal trademarks.
+        </p>
+      </div>
+
+      <div class="cert-grid">
+        
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          </div>
+          <h3 class="cert-title">ISO 9001:2015</h3>
+          <div class="cert-subtitle">Quality Management System</div>
+          <p class="cert-desc">Certified for Design, Supply, Installation, and Maintenance of Elevators and Audio-Visual Solutions.</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+          </div>
+          <h3 class="cert-title">Startup India</h3>
+          <div class="cert-subtitle">Certificate of Recognition</div>
+          <p class="cert-desc">Formally recognized by the Department for Promotion of Industry and Internal Trade (DPIIT), Govt. of India.</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </div>
+          <h3 class="cert-title">Udyam MSME</h3>
+          <div class="cert-subtitle">Registration Certificate</div>
+          <p class="cert-desc">Registered with the Ministry of Micro, Small and Medium Enterprises under Reg. No. UDYAM-UP-50-0090919.</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3 class="cert-title">Trademark Registered</h3>
+          <div class="cert-subtitle">Government of India</div>
+          <p class="cert-desc">Official registered Trademark for the brand "Cappey" under the Trade Marks Act 1999.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project Consultation Section -->
+  <section class="section-pad" style="background: var(--bg-navy-dark);" id="quickInquirySection">
+    <div class="container">
+      <div class="configurator-wrapper">
+        <div style="max-width: 650px; margin-bottom: 2rem;">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            DISPATCH TECHNICAL SPECIFICATION
+          </div>
+          <h2 style="font-size: 2.2rem; margin-bottom: 0.75rem;">Discuss Your Project With Our Engineering Team</h2>
+          <p>Complete the technical inquiry below to receive specialized brochures, CAD drawings, or an initial budgetary proposal within 24 hours.</p>
+        </div>
+
+        <form id="homeInquiryForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" class="form-control" required placeholder="e.g. Rahul Sharma">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Corporate Email *</label>
+              <input type="email" class="form-control" required placeholder="e.g. r.sharma@company.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" class="form-control" required placeholder="e.g. +91 98765 43210">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Required Division *</label>
+              <select class="form-control" required>
+                <option value="">Select Required Service</option>
+                <option value="Elevators">Elevator Systems (Passenger / Home / Panoramic)</option>
+                <option value="AudioVisual">Audio-Visual Systems (Sound / Displays / Boardroom)</option>
+                <option value="Both">Turnkey Integration (Both Elevators & AV)</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label class="form-label">Project Details & Building Scope</label>
+              <textarea class="form-control" rows="3" placeholder="Specify building type, number of stops, room dimensions, or expected installation date..."></textarea>
+            </div>
+            <div class="form-group full-width">
+              <button type="submit" class="btn btn-copper" style="align-self: flex-start;">
+                <span>Dispatch Technical Inquiry</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Corporate Footer (From PDF Page 29) -->
+  <footer class="cappey-footer">
+    <div class="footer-gradient-line"></div>
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1.25rem;">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M15 9a4.5 4.5 0 1 0 0 6"></path></svg>
+            </div>
+            <div class="logo-text-block">
+              <span class="logo-title">CAPPEY <span>INDIA</span></span>
+              <span class="logo-tagline">Audio Visual | Elevators | Solutions</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Cappey India Private Limited is a specialized provider of premium architectural elevator systems and enterprise commercial audio-visual engineering. Certified ISO 9001:2015.
+          </p>
+          <div style="display: flex; gap: 0.65rem;">
+            <span class="spec-badge" style="border-color: var(--copper-border); color: var(--copper-light);">ISO 9001:2015</span>
+            <span class="spec-badge">Startup India Recognized</span>
+            <span class="spec-badge">MSME Registered</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Divisions Navigation -->
+        <div>
+          <h3 class="footer-col-title">Our Divisions</h3>
+          <ul class="footer-links">
+            <li><a href="elevators.html">&rarr; Elevators & Vertical Mobility</a></li>
+            <li><a href="audio-visual.html">&rarr; Commercial Audio Visual</a></li>
+            <li><a href="elevators.html#liftTypes">&rarr; Panoramic & Glass Lifts</a></li>
+            <li><a href="elevators.html#controlsSection">&rarr; ADCO Smart Controllers</a></li>
+            <li><a href="audio-visual.html#marketSectors">&rarr; Boardrooms & Auditoriums</a></li>
+            <li><a href="audio-visual.html#avPillars">&rarr; Pro Audio Brand Matrix</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">&rarr; About Cappey India</a></li>
+            <li><a href="about.html#missionVision">&rarr; Mission & Vision</a></li>
+            <li><a href="#certifications">&rarr; Certifications & Legal</a></li>
+            <li><a href="#partnerBrands">&rarr; Authorized Brand Partners</a></li>
+            <li><a href="contact.html">&rarr; Contact & Support</a></li>
+            <li><a href="mobile.html" style="color: var(--copper);">&rarr; 📱 Stitch Mobile Version</a></li>
+            <li><a href="#quoteModal" class="open-quote-modal">&rarr; Request Project Proposal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Information (From PDF Page 29) -->
+        <div>
+          <h3 class="footer-col-title">Headquarters</h3>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <div>
+              <strong>Cappey India Pvt. Ltd.</strong><br>
+              Indira Nagar Sec 9, Lucknow,<br>
+              Uttar Pradesh - 226016, India
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <div>
+              <a href="tel:+918400000054">+91 - 8400000054</a><br>
+              <a href="tel:+918881100054">+91 - 8881100054</a><br>
+              <a href="tel:+919582582008">+91 - 95825 82008</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <div>
+              <a href="mailto:cappeyindiapvtltd@gmail.com">cappeyindiapvtltd@gmail.com</a><br>
+              <a href="https://www.cappey.com" target="_blank" rel="noopener">www.cappey.com</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Cappey India Private Limited. All Rights Reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="mailto:cappeyindiapvtltd@gmail.com?subject=Privacy%20inquiry">Privacy inquiries</a>
+          <a href="mailto:cappeyindiapvtltd@gmail.com?subject=Terms%20inquiry">Terms inquiries</a>
+          <a href="mailto:cappeyindiapvtltd@gmail.com?subject=Safety%20compliance%20inquiry">Safety compliance inquiries</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Quote Modal -->
+  <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle" aria-hidden="true" inert>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close Modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div style="margin-bottom: 1.5rem;">
+        <div class="section-tag" style="margin-bottom: 0.5rem;">FAST TURNKEY QUOTE</div>
+        <h3 id="quoteModalTitle" style="font-size: 1.5rem;">Request Project Consultation</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Receive technical datasheets, CAD footprints, and cost estimates from Cappey engineers.</p>
+      </div>
+
+      <form id="modalQuoteForm">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control" required placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" required placeholder="Enter mobile number">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" required placeholder="Enter corporate email">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Service Scope</label>
+            <select class="form-control" id="modalServiceSelect" required>
+              <option value="Elevators">Elevators & Lifts</option>
+              <option value="Audio Visual">Commercial Audio-Visual</option>
+              <option value="Both">Turnkey Both (Elevators + AV)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-copper" style="margin-top: 0.5rem; width: 100%;">
+            <span>Submit Quotation Request</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=2"></script>
+  <!-- Agentation is a local development aid, not a public site dependency. -->
+  <script type="module">
+    if (['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
+      const React = (await import('https://esm.sh/react@18.3.1')).default;
+      const ReactDOM = (await import('https://esm.sh/react-dom@18.3.1')).default;
+      const { Agentation } = await import('https://esm.sh/agentation?deps=react@18.3.1,react-dom@18.3.1');
+      const el = document.createElement('div');
+      el.id = 'agentation-root';
+      document.body.appendChild(el);
+      ReactDOM.createRoot(el).render(React.createElement(Agentation, { endpoint: 'http://localhost:4747' }));
+    }
+  </script>
+</body>
+</html>

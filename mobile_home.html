@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, " name="viewport"/>
+<title>CAPPEY INDIA | Audio Visual &amp; Vertical Mobility Engineering</title>
+<!-- Google Fonts: Syne & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim as required -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-fixed": "#0d1c32",
+            "outline": "#8f9097",
+            "on-primary": "#233148",
+            "on-surface": "#d9e3f8",
+            "on-secondary-container": "#fb9e75",
+            "on-tertiary-fixed": "#0b1c30",
+            "primary-fixed-dim": "#b9c7e4",
+            "error": "#ffb4ab",
+            "on-surface-variant": "#c5c6cd",
+            "on-secondary-fixed-variant": "#753313",
+            "on-primary-fixed-variant": "#39475f",
+            "on-error-container": "#ffdad6",
+            "inverse-primary": "#515f78",
+            "on-secondary": "#581e00",
+            "surface-container-lowest": "#050e1d",
+            "inverse-on-surface": "#273141",
+            "outline-variant": "#44474d",
+            "tertiary": "#b7c8e1",
+            "surface-container-low": "#121c2b",
+            "on-tertiary-container": "#73839b",
+            "on-background": "#d9e3f8",
+            "background": "#091423",
+            "surface-tint": "#b9c7e4",
+            "surface-bright": "#303a4a",
+            "secondary-fixed-dim": "#ffb596",
+            "surface-container-high": "#212a3a",
+            "secondary": "#ffb596",
+            "primary-container": "#0a192f",
+            "tertiary-fixed": "#d3e4fe",
+            "on-tertiary": "#213145",
+            "tertiary-container": "#081a2d",
+            "primary-fixed": "#d6e3ff",
+            "on-secondary-fixed": "#360f00",
+            "on-error": "#690005",
+            "on-primary-container": "#74829d",
+            "surface-dim": "#091423",
+            "inverse-surface": "#d9e3f8",
+            "secondary-container": "#753313",
+            "surface-container": "#16202f",
+            "error-container": "#93000a",
+            "tertiary-fixed-dim": "#b7c8e1",
+            "surface-container-highest": "#2c3546",
+            "surface-variant": "#2c3546",
+            "primary": "#b9c7e4",
+            "surface": "#091423",
+            "secondary-fixed": "#ffdbcd",
+            "on-tertiary-fixed-variant": "#38485d"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin-lg": "5rem",
+            "space-xl": "2.5rem",
+            "margin": "1.25rem",
+            "margin-md": "2.5rem",
+            "space-2xl": "4rem",
+            "space-sm": "0.5rem",
+            "gutter-lg": "2.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "title-md": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Syne"],
+            "headline-lg": ["Syne"],
+            "headline-xl-mobile": ["Syne"],
+            "headline-md": ["Syne"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Syne"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-xl": ["Syne"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Syne"]
+          },
+          "fontSize": {
+            "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "800" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.015em", "fontWeight": "400" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.15em", "fontWeight": "700" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Architectural Custom Visual Highlights */
+    .copper-gradient-text {
+      background: linear-gradient(135deg, #ffdbcd 0%, #ffb596 50%, #c87d55 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .copper-border-gradient {
+      border-image: linear-gradient(90deg, #d9825b 0%, rgba(217, 130, 91, 0.2) 100%) 1;
+    }
+    .copper-btn-bg {
+      background: linear-gradient(180deg, #d9825b 0%, #b36b44 100%);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    }
+    .blueprint-grid {
+      background-size: 24px 24px;
+      background-image: 
+        linear-gradient(to right, rgba(226, 232, 240, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(226, 232, 240, 0.03) 1px, transparent 1px);
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom, 1.25rem);
+    }
+    /* Hide scrollbars for slick horizontal carousels */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+  <style>
+    :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+      outline: 3px solid #dd8e66;
+      outline-offset: 3px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary-container selection:text-secondary-fixed overflow-x-hidden blueprint-grid">
+<!-- ================= TOP APP BAR (MANDATED SHARED COMPONENT) ================= -->
+<!-- Executed using style_shell_layout, style_bg_color, style_shadows_and_elevation, typography from JSON -->
+<header class="sticky top-0 z-50 flex items-center justify-between w-full px-margin py-space-sm bg-surface-container-lowest/90 backdrop-blur-md shadow-2xl">
+<!-- Left: Monogram & Identity Anchor -->
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-low border border-secondary/30 flex items-center justify-center text-secondary shadow-[0_0_15px_-3px_rgba(217,130,91,0.3)]">
+<span class="material-symbols-outlined text-headline-sm" data-icon="architecture">architecture</span>
+</div>
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm font-bold tracking-widest text-on-surface leading-none">CAPPEY</span>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest uppercase text-[9px] mt-0.5">AUDIO VISUAL | ELEVATORS</span>
+</div>
+</div>
+<!-- Right: Direct Quick Dial + Drawer Menu Trigger -->
+<div class="flex items-center gap-space-sm">
+<a aria-label="Direct Technical Support Line" class="w-8 h-8 rounded-full border border-secondary/40 flex items-center justify-center text-secondary hover:bg-secondary/10 active:scale-95 transition-all" href="tel:+9105224002277">
+<span class="material-symbols-outlined text-[18px]" data-icon="call">call</span>
+</a>
+<button aria-label="Open Navigation Drawer" class="w-9 h-9 rounded-lg bg-surface-container-high/60 border border-outline-variant/30 flex items-center justify-center text-on-surface active:scale-95 transition-transform" id="menu-toggle-btn" aria-expanded="false" aria-controls="nav-drawer">
+<span class="material-symbols-outlined text-[20px]" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- ================= NAVIGATION DRAWER (MANDATED SHARED COMPONENT) ================= -->
+<!-- Controlled via Drawer Trigger; Mobile Drawer Overlay -->
+<div class="fixed inset-0 bg-surface-container-lowest/80 backdrop-blur-sm z-50 hidden transition-opacity duration-300 opacity-0" id="drawer-backdrop"></div>
+<aside class="fixed inset-y-0 right-0 z-50 flex flex-col w-4/5 max-w-sm p-space-lg bg-surface-container-lowest border-l border-outline-variant/30 shadow-2xl translate-x-full transition-transform duration-300" id="nav-drawer" aria-label="Mobile navigation" aria-hidden="true" inert>
+<div class="flex items-center justify-between pb-space-md border-b border-outline-variant/20 mb-space-md">
+<div class="flex flex-col">
+<span class="text-headline-sm font-headline-sm font-extrabold tracking-widest text-secondary">CAPPEY ARCHITECTURAL</span>
+<span class="text-label-sm font-label-sm text-outline tracking-wider">ENGINEERING CONTRACTOR</span>
+</div>
+<button class="text-on-surface-variant hover:text-secondary p-1" id="drawer-close-btn" aria-label="Close navigation">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<!-- Mandatory Navigation Drawer Destinations from JSON -->
+<!-- Screen represents Mobile Home, so 'Overview' is Active -->
+<nav class="flex flex-col gap-space-xs flex-1">
+<!-- 1. Overview (Active Match) -->
+<a class="flex items-center gap-space-md bg-secondary-container/20 text-secondary border-l-2 border-secondary px-space-md py-space-sm rounded" href="#overview">
+<span class="material-symbols-outlined text-[20px]" data-icon="domain">domain</span>
+<span class="text-label-md font-label-md tracking-wider uppercase">Overview</span>
+</a>
+<!-- 2. Audio Visual Engineering -->
+<a class="flex items-center gap-space-md text-on-surface-variant hover:bg-surface-container hover:text-secondary px-space-md py-space-sm rounded transition-all" href="audio-visual.html">
+<span class="material-symbols-outlined text-[20px]" data-icon="sensors">sensors</span>
+<span class="text-label-md font-label-md tracking-wider uppercase">Audio Visual Engineering</span>
+</a>
+<!-- 3. Vertical Mobility & Elevators -->
+<a class="flex items-center gap-space-md text-on-surface-variant hover:bg-surface-container hover:text-secondary px-space-md py-space-sm rounded transition-all" href="elevators.html">
+<span class="material-symbols-outlined text-[20px]" data-icon="elevator">elevator</span>
+<span class="text-label-md font-label-md tracking-wider uppercase">Vertical Mobility &amp; Elevators</span>
+</a>
+<!-- 4. Integrated Solutions -->
+<a class="flex items-center gap-space-md text-on-surface-variant hover:bg-surface-container hover:text-secondary px-space-md py-space-sm rounded transition-all" href="#solutions">
+<span class="material-symbols-outlined text-[20px]" data-icon="hub">hub</span>
+<span class="text-label-md font-label-md tracking-wider uppercase">Integrated Solutions</span>
+</a>
+<!-- 5. Technical Specifications -->
+<a class="flex items-center gap-space-md text-on-surface-variant hover:bg-surface-container hover:text-secondary px-space-md py-space-sm rounded transition-all" href="#specifications">
+<span class="material-symbols-outlined text-[20px]" data-icon="engineering">engineering</span>
+<span class="text-label-md font-label-md tracking-wider uppercase">Technical Specifications</span>
+</a>
+</nav>
+<!-- Drawer Footer Specs & Direct Line -->
+<div class="pt-space-md border-t border-outline-variant/20 flex flex-col gap-space-xs text-body-sm text-outline">
+<div class="flex items-center justify-between text-secondary font-label-sm tracking-wider">
+<span>HQ: LUCKNOW / PAN-INDIA</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+</div>
+<p class="text-[11px] leading-relaxed">Direct Desk: +91 (0522) 400-CAPPEY</p>
+<p class="text-[10px] text-outline-variant uppercase tracking-widest mt-1">Cappey India Private Limited</p>
+</div>
+</aside>
+<!-- ================= MAIN CONTENT CANVAS ================= -->
+<main class="w-full pb-32">
+<!-- HERO SECTION -->
+<section class="relative px-margin pt-space-lg pb-space-xl overflow-hidden" id="overview">
+<!-- Architectural Corner Grid Element -->
+<div class="absolute top-0 right-0 w-32 h-32 border-r border-t border-secondary/15 pointer-events-none"></div>
+<!-- Eyebrow Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-secondary-container/20 border border-secondary/30 mb-space-sm backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest uppercase">CAPPEY INDIA | LUXURY ENGINEERING SYSTEMS</span>
+</div>
+<!-- Main Mobile Headline -->
+<h1 class="text-headline-xl-mobile font-headline-xl-mobile text-on-surface tracking-tight uppercase leading-tight mb-space-sm">
+        ELEVATING SPACES. <br/>
+<span class="copper-gradient-text">AMPLIFYING</span> EXPERIENCES.
+      </h1>
+<!-- Architectural Subtitle -->
+<p class="text-body-md font-body-md text-on-surface-variant/90 leading-relaxed max-w-sm mb-space-lg">
+        Leading engineering contractor executing architectural vertical mobility and enterprise broadcast-grade AV integration across India.
+      </p>
+<!-- DUAL TACTILE QUICK-SWITCH MONOLITH CARDS -->
+<div class="flex flex-col gap-space-md">
+<!-- CARD 1: ELEVATORS DIVISION (Dual-Division Architectural Monolith) -->
+<div class="group relative rounded-xl overflow-hidden bg-surface-container-low border border-secondary/40 shadow-[0_20px_40px_-15px_rgba(2,6,12,0.8)] transition-all">
+<div class="relative h-48 w-full overflow-hidden">
+<img alt="Vertical panoramic elevator installed by Cappey India" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1UKyq2_9viqky6PH5_vbkVas2l4Bwei57c-7aH_6UIBcDGUH8ANrNPTzaXR9CD4ScbBHfV3Qi35eu3TpYNyWqikbGahhROMTibSdQ3wP0qgZw6-q8dh5X0xYcn0JfhpQpLFO4olCco6HydhSFKWZ5h5o0d4-6-fEOmvTjZ9fsA_qWXwe6bbCBoeDXkN8KX9TzqHpAplOslzhx59Al-ksHQNx8JTwYD5apk4bX6anvwSptPccivJi3YQUw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-lowest/40 to-transparent"></div>
+<!-- Structural Accent Badge -->
+<div class="absolute top-3 left-3 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded border border-secondary/30 text-secondary text-label-sm font-label-sm tracking-widest">
+              DIVISION 01
+            </div>
+<!-- Direct Speed Spec Indicator -->
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 px-2 py-0.5 rounded border border-outline-variant/30 text-outline text-[11px] font-mono">
+              VELOCITY: 0.5 - 2.5 m/s
+            </div>
+</div>
+<div class="p-space-md border-t border-outline-variant/20 flex flex-col justify-between">
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface uppercase tracking-wide mb-1">Architectural Elevators</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Panoramic Glass, Heavy Passenger &amp; Machine Room-Less (MRL) gearless lifts.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between border-t border-outline-variant/15">
+<span class="text-[11px] text-secondary font-mono tracking-wider">STANDARDS: EN 81-20 / IS 14665</span>
+<a class="inline-flex items-center gap-1.5 text-secondary text-label-md font-label-md uppercase tracking-wider hover:translate-x-1 transition-transform" href="elevators.html">
+<span>Explore Lifts</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 2: AUDIO VISUAL DIVISION (Dual-Division Architectural Monolith) -->
+<div class="group relative rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-secondary/50 shadow-[0_20px_40px_-15px_rgba(2,6,12,0.8)] transition-all">
+<div class="relative h-48 w-full overflow-hidden">
+<img alt="High-tech enterprise curved screen auditorium executed by Cappey India" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AEtjO1WpRqcnKqGoyTHkEzvOnZoCM8Lk3MxufM_Q996hroYDc9p7KPEgb2e1st8t_YY0Zd4FjFNkgJ7guByPjZ1hS6cjVRb4HuK_vt5HtP_E1S9I8yAoomsYcJ-SYWTSD6s7P86x5VMoKX7JC4OKEfE4SjPcPwLzU7HNDiAwlmHzFdsN2X8u8QruJntbTPwCn4Hya_FoJ-Iv3FRWSf4YDOfsKy-_SB-DSZF0i0FU0yknuWww6K3N-GzmxorEyXE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-lowest/40 to-transparent"></div>
+<!-- Structural Accent Badge -->
+<div class="absolute top-3 left-3 bg-surface-container-lowest/80 backdrop-blur-md px-2.5 py-1 rounded border border-outline-variant/40 text-on-surface-variant text-label-sm font-label-sm tracking-widest">
+              DIVISION 02
+            </div>
+<!-- Dante Protocol Indicator -->
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 px-2 py-0.5 rounded border border-outline-variant/30 text-outline text-[11px] font-mono">
+              PROTOCOL: DANTE / 4K COB
+            </div>
+</div>
+<div class="p-space-md border-t border-outline-variant/20 flex flex-col justify-between">
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface uppercase tracking-wide mb-1">Professional AV Solutions</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Seamless Micro-LED Videowalls, Digital Signal Processing &amp; Auditorium Acoustics.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between border-t border-outline-variant/15">
+<span class="text-[11px] text-on-surface-variant font-mono tracking-wider">4K Micro-LED &amp; Dante Audio</span>
+<a class="inline-flex items-center gap-1.5 text-secondary text-label-md font-label-md uppercase tracking-wider hover:translate-x-1 transition-transform" href="audio-visual.html">
+<span>Explore AV</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- COMPACT ENGINEERING STATS ROW (Blueprint Tectonic Blocks) -->
+<section class="px-margin mb-space-xl">
+<div class="grid grid-cols-2 gap-space-xs border border-outline-variant/25 rounded-xl bg-surface-container-lowest/80 p-2">
+<!-- Stat 1 -->
+<div class="p-3 bg-surface-container-low/40 rounded-lg border border-outline-variant/15 flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="text-[10px] font-mono text-outline">TIMELINE</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+</div>
+<span class="text-headline-md font-headline-md text-on-surface font-bold">10+</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant mt-0.5">Years Excellence</span>
+</div>
+<!-- Stat 2 -->
+<div class="p-3 bg-surface-container-low/40 rounded-lg border border-outline-variant/15 flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="text-[10px] font-mono text-outline">PORTFOLIO</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+</div>
+<span class="text-headline-md font-headline-md text-secondary font-bold">500+</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant mt-0.5">Landmark Installs</span>
+</div>
+<!-- Stat 3 -->
+<div class="p-3 bg-surface-container-low/40 rounded-lg border border-outline-variant/15 flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="text-[10px] font-mono text-outline">QUALITY</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+</div>
+<span class="text-headline-sm font-headline-sm text-on-surface font-bold tracking-tight">ISO</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant mt-0.5">9001:2015 Cert.</span>
+</div>
+<!-- Stat 4 -->
+<div class="p-3 bg-surface-container-low/40 rounded-lg border border-outline-variant/15 flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="text-[10px] font-mono text-outline">SUPPORT</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+</div>
+<span class="text-headline-md font-headline-md text-secondary font-bold">24/7</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant mt-0.5">Dedicated SLA</span>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE SERVICE CARDS WITH TOGGLE TABS -->
+<section class="px-margin mb-space-xl" id="solutions">
+<!-- Section Header -->
+<div class="flex flex-col mb-space-md">
+<div class="flex items-center gap-2 mb-1">
+<span class="h-px w-6 bg-secondary"></span>
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-widest">CONTRACTING DIVISIONS</span>
+</div>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface uppercase">Turnkey Capabilities</h2>
+</div>
+<!-- Segment Toggle Pills -->
+<div class="flex items-center gap-1.5 p-1 bg-surface-container-lowest rounded-lg border border-outline-variant/30 mb-space-md overflow-x-auto no-scrollbar">
+<button class="service-tab-btn flex-1 py-1.5 px-3 rounded text-label-sm font-label-sm uppercase tracking-wider bg-secondary-container text-on-secondary-container font-bold whitespace-nowrap transition-all" id="tab-all" aria-pressed="true" onclick="filterServices('all')">
+          All
+        </button>
+<button class="service-tab-btn flex-1 py-1.5 px-3 rounded text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-all" id="tab-elevators" aria-pressed="false" onclick="filterServices('elevators')">
+          Vertical Mobility
+        </button>
+<button class="service-tab-btn flex-1 py-1.5 px-3 rounded text-label-sm font-label-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface whitespace-nowrap transition-all" id="tab-av" aria-pressed="false" onclick="filterServices('av')">
+          Audio Visual
+        </button>
+</div>
+<!-- Accordion / Tactical Service Cards List -->
+<div class="flex flex-col gap-space-sm" id="service-container">
+<!-- Card 1: Passenger & Panoramic Lifts -->
+<div class="service-card elevators bg-surface-container-low/60 rounded-xl border border-outline-variant/20 overflow-hidden transition-all duration-300">
+<button type="button" class="p-space-md flex items-start gap-space-md cursor-pointer w-full text-left bg-transparent border-0" aria-expanded="false" onclick="toggleDetails(this)">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-secondary/30 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="elevator">elevator</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-widest">ELEVATOR DIVISION</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 expand-icon text-[20px]" data-icon="expand_more">expand_more</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface mt-0.5">Passenger &amp; Panoramic Glass Lifts</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Custom copper-bronze enclosures with panoramic safety glass.</p>
+</div>
+</button>
+<!-- Hidden Details -->
+<div class="service-details hidden px-space-md pb-space-md pt-space-xs border-t border-outline-variant/15 text-body-sm text-on-surface-variant bg-surface-container-lowest/50" aria-hidden="true">
+<div class="grid grid-cols-2 gap-2 mb-2 font-mono text-[11px]">
+<span class="text-outline">Traction: Permanent Magnet Synchronous</span>
+<span class="text-outline">Cab: Curved Laminated Low-Iron</span>
+</div>
+<p class="text-[12px] leading-relaxed">Engineered for luxury atriums and commercial flagships. Whisper-quiet ride performance with integrated regenerative drives for high energy efficiency.</p>
+</div>
+</div>
+<!-- Card 2: Fine-Pitch Micro-LED Walls -->
+<div class="service-card av bg-surface-container-low/60 rounded-xl border border-outline-variant/20 overflow-hidden transition-all duration-300">
+<button type="button" class="p-space-md flex items-start gap-space-md cursor-pointer w-full text-left bg-transparent border-0" aria-expanded="false" onclick="toggleDetails(this)">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-secondary/30 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="tv_gen">tv_gen</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-widest">AV DIVISION</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 expand-icon text-[20px]" data-icon="expand_more">expand_more</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface mt-0.5">Fine-Pitch Micro-LED Walls</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Chip-on-Board (COB) curved seamless display video walls.</p>
+</div>
+</button>
+<!-- Hidden Details -->
+<div class="service-details hidden px-space-md pb-space-md pt-space-xs border-t border-outline-variant/15 text-body-sm text-on-surface-variant bg-surface-container-lowest/50" aria-hidden="true">
+<div class="grid grid-cols-2 gap-2 mb-2 font-mono text-[11px]">
+<span class="text-outline">Pixel Pitch: 0.9mm to 1.5mm</span>
+<span class="text-outline">Refresh Rate: 3840Hz HDR10+</span>
+</div>
+<p class="text-[12px] leading-relaxed">Seamless curved engineering tailored for corporate command centers, executive boardrooms, and private auditoriums with optical calibration.</p>
+</div>
+</div>
+<!-- Card 3: Machine Room-Less (MRL) Elevators -->
+<div class="service-card elevators bg-surface-container-low/60 rounded-xl border border-outline-variant/20 overflow-hidden transition-all duration-300">
+<button type="button" class="p-space-md flex items-start gap-space-md cursor-pointer w-full text-left bg-transparent border-0" aria-expanded="false" onclick="toggleDetails(this)">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-secondary/30 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-widest">ELEVATOR DIVISION</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 expand-icon text-[20px]" data-icon="expand_more">expand_more</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface mt-0.5">Machine Room-Less (MRL) Commercial</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">High-traffic commercial towers up to 30 stops.</p>
+</div>
+</button>
+<!-- Hidden Details -->
+<div class="service-details hidden px-space-md pb-space-md pt-space-xs border-t border-outline-variant/15 text-body-sm text-on-surface-variant bg-surface-container-lowest/50" aria-hidden="true">
+<div class="grid grid-cols-2 gap-2 mb-2 font-mono text-[11px]">
+<span class="text-outline">Capacity: 630kg - 2500kg</span>
+<span class="text-outline">Fire Rating: 2-Hour Rated Doors</span>
+</div>
+<p class="text-[12px] leading-relaxed">Saves building footprint with hoistway-mounted traction machinery. Smart group dispatch algorithms optimize waiting intervals in IT parks.</p>
+</div>
+</div>
+<!-- Card 4: Pro Sound & Acoustic Architecture -->
+<div class="service-card av bg-surface-container-low/60 rounded-xl border border-outline-variant/20 overflow-hidden transition-all duration-300">
+<button type="button" class="p-space-md flex items-start gap-space-md cursor-pointer w-full text-left bg-transparent border-0" aria-expanded="false" onclick="toggleDetails(this)">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-secondary/30 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="volume_up">volume_up</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-widest">AV DIVISION</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 expand-icon text-[20px]" data-icon="expand_more">expand_more</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface mt-0.5">Pro Sound &amp; Acoustic Architecture</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Beam-steering arrays and Dante network audio distribution.</p>
+</div>
+</button>
+<!-- Hidden Details -->
+<div class="service-details hidden px-space-md pb-space-md pt-space-xs border-t border-outline-variant/15 text-body-sm text-on-surface-variant bg-surface-container-lowest/50" aria-hidden="true">
+<div class="grid grid-cols-2 gap-2 mb-2 font-mono text-[11px]">
+<span class="text-outline">STI Index: &gt; 0.68 Acoustic</span>
+<span class="text-outline">DSP: Low-latency Dante Matrix</span>
+</div>
+<p class="text-[12px] leading-relaxed">Precision acoustic modeling with certified hardware deployment (Genelec, Turbosound, Audio-Technica) ensuring intelligible sound pressure levels.</p>
+</div>
+</div>
+<!-- Card 5: Bespoke Home & Villa Elevators -->
+<div class="service-card elevators bg-surface-container-low/60 rounded-xl border border-outline-variant/20 overflow-hidden transition-all duration-300">
+<button type="button" class="p-space-md flex items-start gap-space-md cursor-pointer w-full text-left bg-transparent border-0" aria-expanded="false" onclick="toggleDetails(this)">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-secondary/30 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="cottage">cottage</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-widest">ELEVATOR DIVISION</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 expand-icon text-[20px]" data-icon="expand_more">expand_more</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface mt-0.5">Bespoke Home &amp; Villa Elevators</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Ultra-quiet single phase 230V, zero-pit luxury lifts.</p>
+</div>
+</button>
+<!-- Hidden Details -->
+<div class="service-details hidden px-space-md pb-space-md pt-space-xs border-t border-outline-variant/15 text-body-sm text-on-surface-variant bg-surface-container-lowest/50" aria-hidden="true">
+<div class="grid grid-cols-2 gap-2 mb-2 font-mono text-[11px]">
+<span class="text-outline">Pit Requirement: 100mm / Zero</span>
+<span class="text-outline">Finish: Brushed Rose Gold / Wood</span>
+</div>
+<p class="text-[12px] leading-relaxed">Integrated within architectural spiral staircases or private residence foyers. Low energy consumption with battery emergency evacuation backup.</p>
+</div>
+</div>
+<!-- Card 6: Boardroom & Conference Automation -->
+<div class="service-card av bg-surface-container-low/60 rounded-xl border border-outline-variant/20 overflow-hidden transition-all duration-300">
+<button type="button" class="p-space-md flex items-start gap-space-md cursor-pointer w-full text-left bg-transparent border-0" aria-expanded="false" onclick="toggleDetails(this)">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-secondary/30 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]" data-icon="meeting_room">meeting_room</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-widest">AV DIVISION</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 expand-icon text-[20px]" data-icon="expand_more">expand_more</span>
+</div>
+<h3 class="text-title-md font-title-md text-on-surface mt-0.5">Boardroom &amp; Conference Automation</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Crestron &amp; Q-SYS 1-touch unified matrix.</p>
+</div>
+</button>
+<!-- Hidden Details -->
+<div class="service-details hidden px-space-md pb-space-md pt-space-xs border-t border-outline-variant/15 text-body-sm text-on-surface-variant bg-surface-container-lowest/50" aria-hidden="true">
+<div class="grid grid-cols-2 gap-2 mb-2 font-mono text-[11px]">
+<span class="text-outline">Control: Wireless iPad / Touch Panel</span>
+<span class="text-outline">Sensors: Auto Voice Tracking Mics</span>
+</div>
+<p class="text-[12px] leading-relaxed">Full room orchestration encompassing motorized blackout shades, environmental lighting presets, biometric access, and multi-platform Teams/Zoom integration.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- TOUCH-FRIENDLY MARKET SEGMENTS GRID -->
+<section class="px-margin mb-space-xl" id="specifications">
+<div class="flex flex-col mb-space-md">
+<div class="flex items-center gap-2 mb-1">
+<span class="h-px w-6 bg-secondary"></span>
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-widest">PORTFOLIO REACH</span>
+</div>
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface uppercase">Sector Solutions</h2>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- 1. Corporate Boardrooms -->
+<div class="p-4 rounded-xl bg-surface-container-low/70 border border-outline-variant/20 flex flex-col justify-between hover:border-secondary/40 transition-colors">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-secondary/25 flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined text-[22px]" data-icon="table_restaurant">table_restaurant</span>
+</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface text-sm uppercase font-semibold">Corporate Boardrooms</h4>
+<p class="text-[11px] text-outline mt-1 leading-snug">Executive governance suites &amp; smart council hubs.</p>
+</div>
+</div>
+<!-- 2. Auditoriums & Theatres -->
+<div class="p-4 rounded-xl bg-surface-container-low/70 border border-outline-variant/20 flex flex-col justify-between hover:border-secondary/40 transition-colors">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-secondary/25 flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined text-[22px]" data-icon="theater_comedy">theater_comedy</span>
+</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface text-sm uppercase font-semibold">Auditoriums &amp; Theatres</h4>
+<p class="text-[11px] text-outline mt-1 leading-snug">Tuned electro-acoustics and grand scale visuals.</p>
+</div>
+</div>
+<!-- 3. Luxury Hospitality & Hotels -->
+<div class="p-4 rounded-xl bg-surface-container-low/70 border border-outline-variant/20 flex flex-col justify-between hover:border-secondary/40 transition-colors">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-secondary/25 flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined text-[22px]" data-icon="hotel">hotel</span>
+</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface text-sm uppercase font-semibold">Luxury Hospitality</h4>
+<p class="text-[11px] text-outline mt-1 leading-snug">Architectural glass elevators &amp; ballroom sound.</p>
+</div>
+</div>
+<!-- 4. High-End Fitness & Arenas -->
+<div class="p-4 rounded-xl bg-surface-container-low/70 border border-outline-variant/20 flex flex-col justify-between hover:border-secondary/40 transition-colors">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-secondary/25 flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined text-[22px]" data-icon="fitness_center">fitness_center</span>
+</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface text-sm uppercase font-semibold">High-End Fitness</h4>
+<p class="text-[11px] text-outline mt-1 leading-snug">High-SPL distributed sound &amp; video telemetry.</p>
+</div>
+</div>
+<!-- 5. Luxury Villas & Penthouses -->
+<div class="p-4 rounded-xl bg-surface-container-low/70 border border-outline-variant/20 flex flex-col justify-between hover:border-secondary/40 transition-colors">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-secondary/25 flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined text-[22px]" data-icon="villa">villa</span>
+</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface text-sm uppercase font-semibold">Villas &amp; Penthouses</h4>
+<p class="text-[11px] text-outline mt-1 leading-snug">Zero-pit private glass lifts &amp; home cinema suites.</p>
+</div>
+</div>
+<!-- 6. Broadcast & Studios -->
+<div class="p-4 rounded-xl bg-surface-container-low/70 border border-outline-variant/20 flex flex-col justify-between hover:border-secondary/40 transition-colors">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-secondary/25 flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined text-[22px]" data-icon="podcasts">podcasts</span>
+</div>
+<div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface text-sm uppercase font-semibold">Broadcast &amp; Studios</h4>
+<p class="text-[11px] text-outline mt-1 leading-snug">Zero-latency IP matrix and studio acoustics.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- BRAND PARTNERS & STATUTORY COMPLIANCE MARQUEE -->
+<section class="px-margin mb-space-xl">
+<!-- Section Tag -->
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/20 mb-space-md">
+<span class="text-label-sm font-label-sm text-outline uppercase tracking-widest">AUTHORIZED ENGINEERING PARTNERS</span>
+<span class="text-[10px] text-secondary font-mono">GLOBAL HARDWARE</span>
+</div>
+<!-- Partner Badges Horizontal Scroll -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 mb-space-md">
+<div class="px-3.5 py-1.5 rounded bg-surface-container-lowest border border-outline-variant/20 text-on-surface text-[12px] font-semibold tracking-wider whitespace-nowrap">Audio-Technica</div>
+<div class="px-3.5 py-1.5 rounded bg-surface-container-lowest border border-outline-variant/20 text-on-surface text-[12px] font-semibold tracking-wider whitespace-nowrap">Genelec</div>
+<div class="px-3.5 py-1.5 rounded bg-surface-container-lowest border border-outline-variant/20 text-on-surface text-[12px] font-semibold tracking-wider whitespace-nowrap">Turbosound</div>
+<div class="px-3.5 py-1.5 rounded bg-surface-container-lowest border border-outline-variant/20 text-on-surface text-[12px] font-semibold tracking-wider whitespace-nowrap">Pioneer DJ</div>
+<div class="px-3.5 py-1.5 rounded bg-surface-container-lowest border border-outline-variant/20 text-on-surface text-[12px] font-semibold tracking-wider whitespace-nowrap">Behringer</div>
+<div class="px-3.5 py-1.5 rounded bg-surface-container-lowest border border-outline-variant/20 text-on-surface text-[12px] font-semibold tracking-wider whitespace-nowrap">JAS Connect</div>
+<div class="px-3.5 py-1.5 rounded bg-surface-container-lowest border border-outline-variant/20 text-on-surface text-[12px] font-semibold tracking-wider whitespace-nowrap">ADCO</div>
+</div>
+<!-- Statutory Trust Badges Grid -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest border border-outline-variant/25">
+<div class="text-label-sm font-label-sm text-secondary uppercase tracking-widest mb-space-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]" data-icon="verified_user">verified_user</span>
+<span>Statutory Accreditations &amp; Registry</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-[11px] text-outline font-mono">
+<div class="p-2 rounded bg-surface-container-low/50 border border-outline-variant/15 flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>ISO 9001:2015 QMS</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low/50 border border-outline-variant/15 flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>DPIIT Startup India</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low/50 border border-outline-variant/15 flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Udyam MSME Registered</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low/50 border border-outline-variant/15 flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Govt. Reg. Trademark</span>
+</div>
+</div>
+</div>
+</section>
+<!-- LUXURY DARK FOOTER ANCHOR -->
+<footer class="px-margin pt-space-lg pb-space-2xl border-t border-outline-variant/20 bg-surface-container-lowest text-on-surface-variant">
+<div class="flex flex-col gap-space-md mb-space-lg">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded bg-surface-container-low border border-secondary/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]" data-icon="architecture">architecture</span>
+</div>
+<span class="text-headline-sm font-headline-sm text-on-surface tracking-widest font-bold">CAPPEY INDIA</span>
+</div>
+<p class="text-body-sm font-body-sm leading-relaxed text-outline max-w-xs">
+          Specialist engineering contractor for state-of-the-art vertical transport machinery and integrated professional audiovisual infrastructure.
+        </p>
+</div>
+<div class="text-[11px] font-mono text-outline-variant space-y-1 border-t border-outline-variant/15 pt-space-md">
+<div>CORPORATE HEADQUARTERS: LUCKNOW, U.P. (INDIA)</div>
+<div>FIELD OPERATIONS: PAN-INDIA CONTRACTING</div>
+<div class="text-[10px] text-outline pt-2">© 2024 CAPPEY INDIA PRIVATE LIMITED. ALL RIGHTS RESERVED.</div>
+</div>
+</footer>
+</main>
+<!-- ================= DOCKED BOTTOM NAVIGATION (MANDATED SHARED COMPONENT) ================= -->
+<!-- Executed precisely using labels: ["Home", "Divisions", "Call Now", "Quote"] from JSON -->
+<!-- Semantic Mapping: Home is currently active -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin py-space-xs pb-safe bg-surface-container-lowest/95 backdrop-blur-lg border-t border-outline-variant/20 shadow-[0_-10px_25px_-5px_rgba(2,6,12,0.8)]">
+<!-- 1. Home (Active match) -->
+<a class="flex flex-col items-center justify-center text-secondary font-bold" href="#overview">
+<span class="material-symbols-outlined text-[22px]" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-[10px] mt-0.5">Home</span>
+</a>
+<!-- 2. Divisions -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#solutions">
+<span class="material-symbols-outlined text-[22px]" data-icon="tune">tune</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-[10px] mt-0.5">Divisions</span>
+</a>
+<!-- 3. Call Now -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-200" href="tel:+9105224002277">
+<span class="material-symbols-outlined text-[22px]" data-icon="call">call</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-[10px] mt-0.5">Call Now</span>
+</a>
+<!-- 4. Quote -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-colors duration-200" href="mobile.html#rfp-form">
+<span class="material-symbols-outlined text-[22px]" data-icon="request_quote">request_quote</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-[10px] mt-0.5">Quote</span>
+</a>
+</nav>
+<!-- ================= INLINE SCRIPT FOR MOBILE INTERACTIONS ================= -->
+<script>
+    // Accessible navigation drawer controls
+    const menuBtn = document.getElementById('menu-toggle-btn');
+    const drawerCloseBtn = document.getElementById('drawer-close-btn');
+    const drawer = document.getElementById('nav-drawer');
+    const backdrop = document.getElementById('drawer-backdrop');
+    const drawerLinks = drawer.querySelectorAll('a[href]');
+
+    function setDrawerState(open) {
+      drawer.classList.toggle('translate-x-full', !open);
+      backdrop.classList.toggle('hidden', !open);
+      backdrop.classList.toggle('opacity-0', !open);
+      drawer.setAttribute('aria-hidden', String(!open));
+      drawer.toggleAttribute('inert', !open);
+      menuBtn.setAttribute('aria-expanded', String(open));
+      document.body.style.overflow = open ? 'hidden' : '';
+      if (open) drawerCloseBtn.focus();
+      else menuBtn.focus();
+    }
+
+    function openDrawer() { setDrawerState(true); }
+    function closeDrawer() { setDrawerState(false); }
+
+    menuBtn?.addEventListener('click', openDrawer);
+    drawerCloseBtn?.addEventListener('click', closeDrawer);
+    backdrop?.addEventListener('click', closeDrawer);
+    drawerLinks.forEach(link => link.addEventListener('click', closeDrawer));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !drawer.classList.contains('translate-x-full')) closeDrawer();
+      if (event.key !== 'Tab' || drawer.classList.contains('translate-x-full')) return;
+      const focusable = [...drawer.querySelectorAll('a[href], button:not([disabled])')];
+      if (event.shiftKey && document.activeElement === focusable[0]) {
+        event.preventDefault(); focusable.at(-1).focus();
+      } else if (!event.shiftKey && document.activeElement === focusable.at(-1)) {
+        event.preventDefault(); focusable[0].focus();
+      }
+    });
+
+    // Filter Service Cards
+    function filterServices(category) {
+      const cards = document.querySelectorAll('.service-card');
+      const tabs = document.querySelectorAll('.service-tab-btn');
+      
+      // Update Tab Styles
+      tabs.forEach(tab => {
+        tab.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'font-bold');
+        tab.classList.add('text-on-surface-variant');
+      });
+
+      const activeTab = document.getElementById('tab-' + category);
+      if (activeTab) {
+        activeTab.classList.remove('text-on-surface-variant');
+        activeTab.classList.add('bg-secondary-container', 'text-on-secondary-container', 'font-bold');
+      }
+      tabs.forEach(tab => tab.setAttribute('aria-pressed', String(tab === activeTab)));
+
+      // Filter Cards
+      cards.forEach(card => {
+        if (category === 'all') {
+          card.style.display = 'block';
+        } else if (card.classList.contains(category)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Expand/Collapse Details Card
+    function toggleDetails(triggerEl) {
+      const parent = triggerEl.closest('.service-card');
+      const details = parent.querySelector('.service-details');
+      const icon = parent.querySelector('.expand-icon');
+
+      if (details.classList.contains('hidden')) {
+        details.classList.remove('hidden');
+        details.setAttribute('aria-hidden', 'false');
+        triggerEl.setAttribute('aria-expanded', 'true');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      } else {
+        details.classList.add('hidden');
+        details.setAttribute('aria-hidden', 'true');
+        triggerEl.setAttribute('aria-expanded', 'false');
+        if (icon) icon.style.transform = 'rotate(0deg)';
+      }
+    }
+  </script>
+</body></html>
