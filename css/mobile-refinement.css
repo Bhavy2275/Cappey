@@ -41,6 +41,11 @@ body.mobile-page {
 .mobile-page main img { display: block; max-width: 100%; }
 .mobile-page button,
 .mobile-page a { -webkit-tap-highlight-color: rgba(168, 98, 66, .12); }
+.mobile-page #menu-toggle-btn,
+.mobile-page #drawer-close-btn,
+.mobile-page .mobile-toggle { min-width: 44px; min-height: 44px; }
+.mobile-page #nav-drawer nav a,
+.mobile-page nav.fixed a { min-height: 44px; }
 .mobile-page :where(a, button, input, select, textarea):focus-visible {
   outline: 3px solid rgba(168, 98, 66, .65);
   outline-offset: 3px;
