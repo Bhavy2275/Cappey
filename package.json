@@ -4,7 +4,14 @@
   "description": "Official website for Cappey India Private Limited - Elevators & Audio Visual Solutions",
   "private": true,
   "scripts": {
-    "dev": "npx serve . --listen 8080 --no-clipboard",
-    "start": "npx serve . --listen 8080"
+    "build:agentation": "esbuild js/agentation-mount.jsx --bundle --minify --format=iife --target=es2020 --outfile=js/agentation.bundle.js",
+    "dev": "npm run build:agentation && npx serve . --listen 8080 --no-clipboard",
+    "start": "npm run build:agentation && npx serve . --listen 8080"
+  },
+  "devDependencies": {
+    "agentation": "^3.1.2",
+    "esbuild": "^0.28.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   }
 }

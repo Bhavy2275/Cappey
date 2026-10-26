@@ -10,7 +10,7 @@
   if (!track || !stage || !ground || !services) return;
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const isCompact = window.matchMedia('(max-width: 900px)');
+  const isMobile = window.matchMedia('(max-width: 620px)');
   let frame = 0;
   const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
   const ease = value => value * value * (3 - 2 * value);
@@ -24,13 +24,17 @@
     const copyOpacity = 1 - ease(clamp((progress - 0.14) / 0.24, 0, 1));
 
     ground.style.height = `${17 + progress * 42}%`;
-    services.style.transform = `translateX(${(1 - serviceProgress) * 105}%)`;
+    services.style.transform = isMobile.matches
+      ? `translateY(${(1 - serviceProgress) * 105}%)`
+      : `translateX(${(1 - serviceProgress) * 105}%)`;
     services.style.opacity = `${serviceProgress}`;
     services.inert = serviceProgress < 0.12;
     if (copy) copy.style.opacity = `${copyOpacity}`;
     if (visual) {
       visual.style.opacity = `${1 - ease(clamp((progress - 0.2) / 0.27, 0, 1))}`;
-      visual.style.transform = `translateY(${-progress * 4}vh)`;
+      visual.style.transform = isMobile.matches
+        ? `translate(-50%, ${-progress * 4}vh)`
+        : `translateY(${-progress * 4}vh)`;
     }
     if (wordmark) wordmark.style.transform = `translateX(${-progress * 13}vw)`;
   }
@@ -40,7 +44,7 @@
   }
 
   function updateMode() {
-    if (prefersReducedMotion.matches || isCompact.matches) {
+    if (prefersReducedMotion.matches) {
       track.classList.remove('story-animated');
       ground.style.removeProperty('height');
       services.style.removeProperty('transform');
@@ -59,6 +63,6 @@
   window.addEventListener('scroll', requestRender, { passive: true });
   window.addEventListener('resize', requestRender, { passive: true });
   prefersReducedMotion.addEventListener?.('change', updateMode);
-  isCompact.addEventListener?.('change', updateMode);
+  isMobile.addEventListener?.('change', updateMode);
   updateMode();
 })();

@@ -5,7 +5,7 @@
    Strict Rule: No Emojis, Precision SVG Icons Only
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Young+Serif&display=swap');
 
 :root {
   /* Brand Palette */
@@ -63,7 +63,7 @@ html {
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Bitter', Georgia, serif;
   background-color: var(--bg-dark-base);
   color: var(--text-main);
   line-height: 1.6;
@@ -73,11 +73,11 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Syne', sans-serif;
-  font-weight: 700;
+  font-family: 'Young Serif', Georgia, serif;
+  font-weight: 400;
   color: var(--text-pure);
-  line-height: 1.15;
-  letter-spacing: -0.015em;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 p {
@@ -160,7 +160,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.65rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Bitter', Georgia, serif;
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -247,32 +247,13 @@ a {
   gap: 0.85rem;
 }
 
-.logo-symbol {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #0f2238 0%, #060e1a 100%);
-  border: 1px solid var(--copper-border);
-  border-radius: 50%;
-  box-shadow: inset 0 0 10px rgba(200, 125, 85, 0.2);
-}
-
-.logo-symbol svg {
-  width: 26px;
-  height: 26px;
-  stroke: var(--copper-light);
-  fill: none;
-}
-
 .logo-text-block {
   display: flex;
   flex-direction: column;
 }
 
 .logo-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Young Serif', Georgia, serif;
   font-size: 1.45rem;
   font-weight: 800;
   color: #ffffff;
@@ -688,7 +669,7 @@ a {
 }
 
 .stat-number {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Bitter', Georgia, serif;
   font-size: clamp(2rem, 3.2vw, 2.75rem);
   font-weight: 800;
   color: #ffffff;
@@ -782,7 +763,7 @@ a {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Bitter', Georgia, serif;
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--text-dim);
@@ -840,7 +821,7 @@ a {
 }
 
 .brand-badge-name {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Bitter', Georgia, serif;
   font-size: 0.95rem;
   font-weight: 700;
   color: #ffffff;
@@ -1175,7 +1156,7 @@ a {
 }
 
 .footer-col-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Bitter', Georgia, serif;
   font-size: 1.05rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -1631,11 +1612,6 @@ textarea.form-control {
   .logo-tagline {
     font-size: 0.49rem;
     letter-spacing: 0.16em;
-  }
-
-  .logo-symbol {
-    width: 38px;
-    height: 38px;
   }
 
   .stats-grid {

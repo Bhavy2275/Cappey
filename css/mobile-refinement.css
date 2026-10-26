@@ -1,73 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Young+Serif&display=swap');
+
 /* Shared editorial finish for the standalone mobile layouts. */
 body.mobile-page {
+  width: 100%;
+  max-width: 100%;
+  min-width: 320px;
+  margin: 0;
+  overflow-x: clip;
   min-height: 100dvh;
-  background-color: #f6f4ef !important;
+  background-color: #FFFFFF !important;
   background-image:
-    linear-gradient(to right, rgba(31, 45, 56, .025) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(31, 45, 56, .025) 1px, transparent 1px) !important;
-  color: #273741 !important;
+    linear-gradient(to right, rgba(33, 32, 32, .025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(33, 32, 32, .025) 1px, transparent 1px) !important;
+  color: #212020 !important;
 }
 
 .mobile-page .text-on-surface,
-.mobile-page .text-on-background { color: #1f2d38 !important; }
-.mobile-page .text-on-surface-variant { color: #626e73 !important; }
-.mobile-page .text-outline { color: #69757a !important; }
-.mobile-page .text-outline-variant { color: #7b8588 !important; }
+.mobile-page .text-on-background { color: #212020 !important; }
+.mobile-page .text-on-surface-variant { color: #555555 !important; }
+.mobile-page .text-outline { color: #707070 !important; }
+.mobile-page .text-outline-variant { color: #707070 !important; }
 .mobile-page .text-secondary,
-.mobile-page .text-on-secondary-container { color: #7e472f !important; }
+.mobile-page .text-on-secondary-container { color: #2547A0 !important; }
 .mobile-page .bg-background,
 .mobile-page .bg-surface,
-.mobile-page .bg-surface-dim,
-.mobile-page .bg-primary-container { background-color: #f6f4ef !important; }
-.mobile-page [class*="bg-surface-container"] { background-color: #fffefa !important; }
-.mobile-page [class*="bg-secondary-container"] { background-color: #f1e7df !important; }
+.mobile-page .bg-surface-dim { background-color: #FFFFFF !important; }
+.mobile-page .bg-primary-container { background-color: #DEDEDE !important; }
+.mobile-page [class*="bg-surface-container"] { background-color: #FFFFFF !important; }
+.mobile-page [class*="bg-secondary-container"] { background-color: #DEDEDE !important; }
 .mobile-page .bg-secondary,
-.mobile-page .copper-btn-bg { background: #a86242 !important; color: #fffefa !important; }
-.mobile-page [class*="border-outline-variant"] { border-color: rgba(31, 45, 56, .15) !important; }
-.mobile-page [class*="border-secondary"] { border-color: rgba(168, 98, 66, .34) !important; }
+.mobile-page .copper-btn-bg { background: #212020 !important; color: #FFFFFF !important; border-radius: 999px; }
+.mobile-page [class*="border-outline-variant"] { border-color: rgba(33, 32, 32, .15) !important; }
+.mobile-page [class*="border-secondary"] { border-color: rgba(37, 71, 160, .34) !important; }
 .mobile-page .blueprint-grid { background-size: 30px 30px; }
 .mobile-page .font-headline-xl-mobile,
-.mobile-page [class*="font-headline"] { font-family: Georgia, "Times New Roman", serif; font-weight: 500; letter-spacing: -.035em; }
-.mobile-page h1 { font-size: clamp(2.5rem, 10vw, 3.55rem); line-height: 1.02; text-transform: none; }
-.mobile-page .copper-gradient-text { background: none; color: #7e472f; -webkit-text-fill-color: currentColor; }
+.mobile-page [class*="font-headline"] { font-family: 'Young Serif', Georgia, serif; font-weight: 400; letter-spacing: -.02em; }
+.mobile-page h1 { font-family: 'Young Serif', Georgia, serif; font-size: clamp(2.5rem, 10vw, 4rem); font-weight: 400; line-height: 1.2; letter-spacing: -.02em; text-transform: none; }
+.mobile-page h2 { font-family: 'Young Serif', Georgia, serif; font-size: clamp(2rem, 7vw, 2.8rem); font-weight: 400; line-height: 1.2; letter-spacing: -.02em; }
+.mobile-page h3 { font-family: 'Young Serif', Georgia, serif; font-size: clamp(1.7rem, 5.5vw, 2.2rem); font-weight: 400; line-height: 1.2; letter-spacing: -.02em; }
+.mobile-page h4 { font-family: 'Young Serif', Georgia, serif; font-size: 1.6rem; font-weight: 400; line-height: 1.2; letter-spacing: -.02em; }
+.mobile-page p { font-family: 'Bitter', Georgia, serif; font-size: 1.1rem; font-weight: 400; line-height: 1.5; letter-spacing: 0; }
+.mobile-page .copper-gradient-text { background: none; color: #2547A0; -webkit-text-fill-color: currentColor; }
 .mobile-page header.sticky {
-  background: rgba(246, 244, 239, .96) !important;
-  border-bottom: 1px solid rgba(31, 45, 56, .12);
-  box-shadow: 0 4px 18px rgba(31, 45, 56, .06) !important;
+  background: rgba(255, 255, 255, .96) !important;
+  border-bottom: 1px solid rgba(33, 32, 32, .12);
+  box-shadow: 0 4px 18px rgba(33, 32, 32, .06) !important;
 }
-.mobile-page main [class*="shadow-"] { box-shadow: 0 4px 16px rgba(31, 45, 56, .07) !important; }
+.mobile-page main [class*="shadow-"] { box-shadow: 0 4px 16px rgba(33, 32, 32, .07) !important; }
 .mobile-page main [class*="rounded-xl"] { border-radius: 7px !important; }
-.mobile-page main [class*="border-outline-variant"] { border-color: rgba(31, 45, 56, .16) !important; }
+.mobile-page main [class*="border-outline-variant"] { border-color: rgba(33, 32, 32, .16) !important; }
 .mobile-page main img { display: block; max-width: 100%; }
 .mobile-page button,
-.mobile-page a { -webkit-tap-highlight-color: rgba(168, 98, 66, .12); }
+.mobile-page a { -webkit-tap-highlight-color: rgba(37, 71, 160, .12); }
+.mobile-page button { font-family: 'Bitter', Georgia, serif !important; font-weight: 400; letter-spacing: 0; text-transform: none; }
 .mobile-page #menu-toggle-btn,
 .mobile-page #drawer-close-btn,
 .mobile-page .mobile-toggle { min-width: 44px; min-height: 44px; }
 .mobile-page #nav-drawer nav a,
 .mobile-page nav.fixed a { min-height: 44px; }
 .mobile-page :where(a, button, input, select, textarea):focus-visible {
-  outline: 3px solid rgba(168, 98, 66, .65);
+  outline: 3px solid rgba(37, 71, 160, .65);
   outline-offset: 3px;
 }
-.mobile-page input,
+.mobile-page input:not([type="checkbox"]):not([type="radio"]),
 .mobile-page select,
-.mobile-page textarea { border-color: rgba(31, 45, 56, .2) !important; background-color: #fffefa !important; color: #273741 !important; }
+.mobile-page textarea { border: 1px solid #BFBFBF !important; border-radius: 999px !important; padding: 1rem 1.25rem !important; background-color: transparent !important; color: #212020 !important; }
+.mobile-page textarea { min-height: 8rem; border-radius: 1.25rem !important; }
+.mobile-page input:not([type="checkbox"]):not([type="radio"]):focus,
+.mobile-page select:focus,
+.mobile-page textarea:focus { border-color: #212020 !important; outline: 2px solid #212020 !important; outline-offset: 2px; box-shadow: none !important; }
+.mobile-page input[type="checkbox"],
+.mobile-page input[type="radio"] { accent-color: #212020; width: 1.1rem; height: 1.1rem; }
 .mobile-page input::placeholder,
-.mobile-page textarea::placeholder { color: #788287 !important; }
+.mobile-page textarea::placeholder { color: #707070 !important; }
 .mobile-page nav.fixed {
-  background: rgba(255, 254, 250, .97) !important;
-  border-color: rgba(31, 45, 56, .14) !important;
-  box-shadow: 0 -5px 20px rgba(31, 45, 56, .07) !important;
+  background: rgba(255, 255, 255, .97) !important;
+  border-color: rgba(33, 32, 32, .14) !important;
+  box-shadow: 0 -5px 20px rgba(33, 32, 32, .07) !important;
 }
 .mobile-page #nav-drawer {
-  background: #fffefa !important;
-  border-color: rgba(31, 45, 56, .15) !important;
-  box-shadow: -12px 0 32px rgba(31, 45, 56, .14) !important;
+  background: #FFFFFF !important;
+  border-color: rgba(33, 32, 32, .15) !important;
+  box-shadow: -12px 0 32px rgba(33, 32, 32, .14) !important;
 }
 .mobile-page #nav-drawer a:hover,
-.mobile-page #nav-drawer a:focus-visible { background: #f1eee8 !important; }
+.mobile-page #nav-drawer a:focus-visible { background: #DEDEDE !important; }
+
+/* Touch devices have no hover state, so give the mobile layouts a subtle
+   scroll reveal instead of relying on desktop hover-only transitions. */
+.mobile-page .mobile-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 560ms ease, transform 560ms cubic-bezier(.2,.7,.2,1);
+}
+.mobile-page .mobile-reveal.is-visible { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
   .mobile-page *, .mobile-page *::before, .mobile-page *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .mobile-page .mobile-reveal { opacity: 1; transform: none; }
 }
