@@ -1446,6 +1446,16 @@ body #cappeyHeader {
 .contact-page .cappey-header:not(.scrolled) .brand-logo-image,
 .founders-page .cappey-header .brand-logo-image { filter: none; }
 .about-page.detail-page .cappey-header .brand-logo-image { filter: none; }
+body.elevators-page.detail-page .cappey-header .brand-logo-image {
+  width: 4rem;
+  max-height: 4rem;
+  filter: none;
+}
+body.elevators-page.detail-page .mobile-drawer .brand-logo-image {
+  width: 4rem;
+  max-height: 4rem;
+  filter: none;
+}
 .cappey-footer .brand-logo-image { width: min(100%, 15rem); max-height: 5rem; }
 .mobile-drawer .brand-logo-image { filter: brightness(0) invert(1); }
 .about-page .about-partner-list .partner-logo-mark { display: flex; align-items: center; }
