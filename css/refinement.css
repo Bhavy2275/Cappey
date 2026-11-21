@@ -957,7 +957,7 @@ input[type="radio"] { width: 1.1rem; height: 1.1rem; }
 .detail-page .cappey-header:not(.scrolled) .nav-link:hover,
 .detail-page .cappey-header:not(.scrolled) .nav-link.active { color: #FFFFFF; }
 .home-page .nav-link.active::after,
-.detail-page .cappey-header:not(.scrolled) .nav-link.active::after { background: #FFFFFF; }
+.detail-page .cappey-header:not(.scrolled) .nav-link.active::after { background: #2547A0; }
 .home-page .nav-hotline { display: none; }
 .home-page .mobile-toggle,
 .detail-page .cappey-header:not(.scrolled) .mobile-toggle { color: #212020; }
