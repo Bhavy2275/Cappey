@@ -23,7 +23,10 @@
         entry.target.classList.add('is-visible');
         currentObserver.unobserve(entry.target);
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    // Tall catalog sections can be several viewports high. A 12% threshold
+    // meant they never became visible because the observer waited for more
+    // pixels than a viewport can show at once.
+    }, { threshold: 0.01, rootMargin: '0px 0px -24px 0px' });
 
     uniqueTargets.forEach((target, index) => {
       target.classList.add('motion-reveal');
