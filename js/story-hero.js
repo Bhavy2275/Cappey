@@ -3,6 +3,7 @@
   const stage = track?.querySelector('.story-stage');
   const ground = track?.querySelector('.story-ground');
   const copy = track?.querySelector('.story-copy');
+  const copyElements = copy?.querySelectorAll('h1, .story-description, .story-actions') ?? [];
   const visual = track?.querySelector('.story-visual');
   const wordmark = track?.querySelector('.story-wordmark');
   const services = track?.querySelector('.story-services');
@@ -29,7 +30,9 @@
       : `translateX(${(1 - serviceProgress) * 105}%)`;
     services.style.opacity = `${serviceProgress}`;
     services.inert = serviceProgress < 0.12;
-    if (copy) copy.style.opacity = `${copyOpacity}`;
+    copyElements.forEach(element => {
+      element.style.opacity = `${copyOpacity}`;
+    });
     if (visual) {
       visual.style.opacity = `${1 - ease(clamp((progress - 0.2) / 0.27, 0, 1))}`;
       visual.style.transform = isMobile.matches
@@ -49,7 +52,7 @@
       ground.style.removeProperty('height');
       services.style.removeProperty('transform');
       services.style.removeProperty('opacity');
-      copy?.style.removeProperty('opacity');
+      copyElements.forEach(element => element.style.removeProperty('opacity'));
       visual?.style.removeProperty('opacity');
       visual?.style.removeProperty('transform');
       wordmark?.style.removeProperty('transform');

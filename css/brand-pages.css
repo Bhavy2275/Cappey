@@ -3,12 +3,12 @@
   display: inline-block;
   max-width: 47rem;
   padding: 1rem 1.2rem;
-  border: 1px solid rgba(255,255,255,.28);
+  border: 0;
   border-radius: 1rem;
-  background: rgba(23, 31, 48, .24);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  box-shadow: 0 1rem 3rem rgba(15,20,32,.12);
+  background: rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 1rem 3rem rgba(15, 20, 32, .12);
 }
 
 .home-page .story-service-card {
@@ -71,7 +71,7 @@
   border-left: 1px solid rgba(33,32,32,.2);
 }
 .represented-brand-grid article {
-  min-height: 170px;
+  min-height: 220px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
