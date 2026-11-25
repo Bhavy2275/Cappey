@@ -81,8 +81,29 @@
   transition: background-color .2s ease;
 }
 .represented-brand-grid article:hover { background: #F4F3F1; }
-.represented-brand-grid h3 { margin: 1.5rem 0 .35rem; font: 500 clamp(1.1rem,1.6vw,1.4rem)/1.1 var(--font-headings); }
-.represented-brand-grid p { margin: 0; color: #666; font-size: .86rem; line-height: 1.45; }
+.represented-brand-card { display: flex; min-height: 155px; flex: 1; flex-direction: column; align-items: flex-start; padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; font: inherit; text-align: left; }
+.represented-brand-logo { display: flex; min-height: 76px; width: 100%; align-items: center; margin: 0 0 1rem; color: #212020; font: 700 clamp(.95rem,1.35vw,1.25rem)/1.08 Arial,sans-serif; letter-spacing: -.035em; }
+.represented-brand-grid article:nth-child(2) .represented-brand-logo { color: #65843A; letter-spacing: .08em; }
+.represented-brand-grid article:nth-child(3) .represented-brand-logo { color: #2547A0; font-style: italic; letter-spacing: .02em; }
+.represented-brand-grid article:nth-child(4) .represented-brand-logo { color: #212020; font-size: clamp(.85rem,1.2vw,1.08rem); letter-spacing: .14em; }
+.represented-brand-grid article:nth-child(5) .represented-brand-logo { font-style: italic; }
+.represented-brand-grid article:nth-child(5) .represented-brand-logo span { margin-left: .35rem; padding: .2rem .3rem; background: #212020; color: #fff; font-size: .7em; letter-spacing: .04em; }
+.represented-brand-grid article:nth-child(6) .represented-brand-logo { color: #2455A4; letter-spacing: .08em; }
+.represented-brand-grid article:nth-child(7) .represented-brand-logo span { margin-left: .3rem; color: #2547A0; font-size: .68em; letter-spacing: .05em; }
+.represented-brand-grid article:nth-child(8) .represented-brand-logo { color: #2547A0; font-size: 1.35rem; }
+.represented-brand-grid article:nth-child(9) .represented-brand-logo { letter-spacing: .1em; }
+.represented-brand-grid article:nth-child(10) .represented-brand-logo { color: #D92D31; letter-spacing: .06em; }
+.brand-card-description { margin: 0; color: #666; font-size: .86rem; line-height: 1.45; }
+.brand-site-link { display: inline-flex; gap: .35rem; align-items: center; margin-top: .85rem; color: #2547A0; font-size: .78rem; font-weight: 600; }
+.represented-brand-card:focus-visible { outline: 2px solid #2547A0; outline-offset: 4px; }
+.brand-info-dialog { position: fixed; inset: 0; width: min(100% - 2rem, 28rem); max-width: 28rem; margin: auto; padding: 2.25rem; border: 1px solid rgba(33,32,32,.16); border-radius: 1rem; background: #fff; color: #212020; box-shadow: 0 1.5rem 5rem rgba(0,0,0,.24); }
+.brand-info-dialog::backdrop { background: rgba(20,24,32,.58); backdrop-filter: blur(3px); }
+.brand-info-dialog .section-tag { margin: 0 0 .75rem; }
+.brand-info-dialog h2 { margin: 0 2rem .75rem 0; font: 500 clamp(1.5rem,4vw,2rem)/1.1 var(--font-headings); }
+.brand-info-dialog > p:not(.section-tag) { margin: 0; color: #555; line-height: 1.6; }
+.brand-info-dialog > a { display: inline-flex; gap: .45rem; align-items: center; margin-top: 1.5rem; color: #2547A0; font-weight: 600; text-decoration: none; }
+.brand-info-close { position: absolute; top: .75rem; right: .85rem; width: 2.25rem; height: 2.25rem; border: 0; border-radius: 50%; background: #f1f1f1; color: #212020; cursor: pointer; font-size: 1.5rem; line-height: 1; }
+.brand-info-close:focus-visible, .brand-info-dialog > a:focus-visible { outline: 2px solid #2547A0; outline-offset: 3px; }
 .represented-brand-link { display: inline-flex; gap: .6rem; align-items: center; margin-top: 1.5rem; color: #2547A0; font-size: .9rem; font-weight: 600; }
 
 .home-page #marketSectors {

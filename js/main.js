@@ -50,6 +50,29 @@ document.addEventListener('DOMContentLoaded', () => {
   drawerBackdrop?.addEventListener('click', closeDrawer);
   drawerLinks.forEach(link => link.addEventListener('click', closeDrawer));
 
+  // Brand partner details
+  const brandInfoDialog = document.getElementById('brandInfoDialog');
+  const brandInfoTitle = document.getElementById('brandInfoTitle');
+  const brandInfoDescription = document.getElementById('brandInfoDescription');
+  const brandInfoWebsite = document.getElementById('brandInfoWebsite');
+  const brandInfoClose = brandInfoDialog?.querySelector('.brand-info-close');
+
+  document.querySelectorAll('.represented-brand-card').forEach(card => {
+    card.addEventListener('click', () => {
+      if (!brandInfoDialog || !brandInfoTitle || !brandInfoDescription || !brandInfoWebsite) return;
+      brandInfoTitle.textContent = card.dataset.brand || '';
+      brandInfoDescription.textContent = card.dataset.description || '';
+      brandInfoWebsite.href = card.dataset.website || '#';
+      brandInfoDialog.showModal();
+      brandInfoClose?.focus();
+    });
+  });
+
+  brandInfoClose?.addEventListener('click', () => brandInfoDialog?.close());
+  brandInfoDialog?.addEventListener('click', event => {
+    if (event.target === brandInfoDialog) brandInfoDialog.close();
+  });
+
   // 3. Modal Manager (Request Quote / Inquiry)
   const quoteModal = document.getElementById('quoteModal');
   const quoteTriggers = document.querySelectorAll('.open-quote-modal');
