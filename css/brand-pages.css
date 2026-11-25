@@ -10,6 +10,23 @@
   backdrop-filter: blur(20px);
   box-shadow: 0 1rem 3rem rgba(15, 20, 32, .12);
 }
+.elevators-page .jas-story-track .story-description {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  padding: 1.1rem 1.35rem;
+  border: 0;
+  border-radius: 1.25rem;
+  background: rgba(22, 22, 22, 0.52);
+  color: rgba(255, 255, 255, 0.94);
+  font-family: var(--font-headings);
+  font-size: clamp(1.35rem, 2vw, 2.1rem);
+  line-height: 1.35;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .14);
+}
 
 .home-page .story-service-card {
   min-height: 360px;
@@ -172,6 +189,57 @@
 .home-page .contact-copy { width: 100%; max-width: 58rem; margin-inline: auto; }
 
 .elevators-page .nav-wrapper .nav-link-external { color: #2547A0; }
+.elevators-page .jas-story-track:not(.story-animated) .story-stage {
+  position: relative; top: auto; display: grid; grid-template-rows: minmax(620px, 100svh) auto;
+  height: auto; min-height: 0; overflow: visible; padding: 0; background: #212020;
+}
+.elevators-page .jas-story-track .story-wordmark,
+.elevators-page .jas-story-track .story-photo-caption,
+.elevators-page .jas-story-track .story-scroll-cue { display: none; }
+.elevators-page .jas-story-track:not(.story-animated) .story-visual {
+  position: absolute; inset: 0; width: 100%; height: 100svh; max-height: none; margin: 0;
+}
+.elevators-page .jas-story-track .story-photo { inset: 0; width: 100%; height: 100%; border: 0; border-radius: 0; box-shadow: none; }
+.elevators-page .jas-story-track .story-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 52%; }
+.elevators-page .jas-story-track:not(.story-animated) .story-ground {
+  position: absolute; z-index: 2; inset: 0; height: 100svh; margin: 0;
+  background: linear-gradient(90deg, rgba(12,14,17,.55), rgba(12,14,17,.2) 72%), linear-gradient(0deg, rgba(12,14,17,.3), transparent 55%);
+}
+.elevators-page .jas-story-track:not(.story-animated) .story-copy {
+  position: relative; z-index: 3; grid-row: 1; align-self: center; justify-self: center;
+  top: auto; left: auto; width: min(92%, 1100px); margin: 0; padding: calc(var(--header-height) + 2.5rem) 0 2rem;
+}
+.elevators-page .jas-story-track .story-eyebrow { color: rgba(255,255,255,.8); }
+.elevators-page .jas-story-track .story-eyebrow > span { background: #fff; }
+.elevators-page .jas-story-track .story-copy h1 { max-width: 15ch; color: #fff; font-size: clamp(3.4rem, 7vw, 6.5rem); line-height: 1.06; letter-spacing: -.035em; }
+.elevators-page .jas-story-track .story-copy h1 em { color: #fff; }
+.elevators-page .jas-story-track .story-description { color: rgba(255,255,255,.94); }
+.elevators-page .jas-story-track .story-actions .btn-copper { min-height: 52px; padding: 1.05rem 2rem; border: 0; border-radius: 999px; background: #fff; color: #212020; }
+.elevators-page .jas-story-track .story-text-link { color: #fff; }
+.elevators-page .jas-story-track:not(.story-animated) .story-services {
+  position: relative; z-index: 3; grid-row: 2; inset: auto; display: grid;
+  grid-template-columns: minmax(220px,.8fr) repeat(2,minmax(0,1fr)); align-items: center;
+  gap: clamp(1.25rem,2.5vw,3rem); width: 100%; padding: clamp(4rem,7vw,7rem) 4vw;
+  background: #dedede; opacity: 1; transform: none; will-change: auto;
+}
+.elevators-page .jas-story-track .story-services-intro { padding: 0; color: #212020; }
+.elevators-page .jas-story-track .story-services-intro .story-eyebrow { color: #555; }
+.elevators-page .jas-story-track .story-services-intro h2 { color: #212020; font-size: clamp(2.2rem,4vw,3.5rem); line-height: 1.08; }
+.elevators-page .jas-story-track .story-services-intro h2 em { color: #2547a0; }
+.elevators-page .jas-story-track .story-services-intro > p:last-child { color: #555; font-size: 1rem; }
+.elevators-page .jas-story-track .story-service-card { background: #fff; }
+.elevators-page .jas-story-track .story-card-link { color: #212020; }
+.elevators-page .jas-story-track .story-service-card .dual-card-media img { width: 100%; height: 100%; object-fit: cover; }
+.elevators-page #liftTypes,
+.elevators-page #controlsSection,
+.elevators-page #configurator { padding-block: clamp(4rem,8vw,7rem); }
+.elevators-page #liftTypes .section-head { margin-bottom: clamp(2rem,4vw,4rem); }
+@media (max-width: 620px) {
+  .elevators-page .jas-story-track:not(.story-animated) .story-stage { grid-template-rows: minmax(580px,100svh) auto; }
+  .elevators-page .jas-story-track:not(.story-animated) .story-copy { width: calc(100% - 2.5rem); padding-top: calc(var(--header-height) + 2rem); }
+  .elevators-page .jas-story-track .story-copy h1 { font-size: clamp(3rem,12vw,4.2rem); }
+  .elevators-page .jas-story-track:not(.story-animated) .story-services { grid-template-columns: 1fr; padding: 3rem 1.25rem; }
+}
 .elevators-page .hero-wrapper .hero-content { max-width: 54rem; }
 
 @media (max-width: 1100px) {
