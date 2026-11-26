@@ -546,7 +546,8 @@ body.contact-page { --detail-hero-image: url("../assets/images/supplied/audiovis
 }
 .elevators-page #controlsSection .controls-feature-card h3 { color: #212020 !important; font-size: 1.4rem !important; }
 .elevators-page #controlsSection .controls-feature-card p { color: #424242 !important; font-size: 1rem !important; }
-.elevators-page #controlsSection .controls-feature-card > div:has(> img) img { max-height: 360px; object-fit: contain; background: #FFFFFF; }
+.elevators-page #controlsSection .controls-feature-card > div:has(> img) { overflow: hidden; }
+.elevators-page #controlsSection .controls-feature-card > div:has(> img) img { width: 100%; height: clamp(15rem, 32vw, 24rem); max-height: none; object-fit: cover; object-position: center; background: #FFFFFF; }
 .elevators-page #controlsSection .controls-feature-card .spec-badge { background: #DEDEDE !important; border-color: #BFBFBF !important; color: #212020 !important; }
 .elevators-page #controlsSection .controls-feature-card strong { color: #212020 !important; }
 .elevators-page #controlsSection .controls-feature-card span { color: #424242 !important; }
@@ -1341,8 +1342,8 @@ body #cappeyHeader {
 }
 
 @media (min-width: 641px) and (max-width: 900px) {
-  .elevators-page .elevators-catalog-grid { grid-template-columns: 1fr; }
-  .elevators-page .lift-card-media { height: clamp(20rem, 48vw, 26rem); }
+  .elevators-page .elevators-catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .elevators-page .lift-card-media { height: clamp(16rem, 32vw, 21rem); }
 }
 
 /* One uncluttered contact layout: Cappey copy and form beside one image. */
